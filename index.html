@@ -1,10 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>...</title>
-  </head>
-  <body>
 
-  </body>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>One Cake Boutique</title>
+
+  <link href="css/main.css" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header>
+    <h1>One Cake Boutique</h1>
+
+    <nav class="top">
+      <a href="#interactive_elements" class="top-nav">Interactive Elements</a>
+      <a href="#text_elements" class="top-nav">Text Elements</a>
+      <a href="#combined_elements" class="top-nav">Combined Elements</a>
+      <a href="product.html" class="top-nav">Product Listing Template</a>
+      <a href="checkout.html" class="top-nav">Checkout Template</a>
+      <a href="#DesignElements" class="top-nav">Intro & Design Elements</a>
+      <a href="#citations" class="top-nav">Citations</a>
+    </nav>
+
+  </header>
+
+
+
+  <!-- INTERACTIVE ELEMENTS SECTION // -->
+  <section id="interactive_elements">
+    <h2>Interactive Elements</h2>
+
+    <!-- An in-text link// -->
+    <section class="element">
+      <h3>In-text link</h3>
+
+      <h4>CSS selector:</h4>
+      <p>a</p>
+
+      <h4>Sample code:</h4>
+      <code>
+        &lt;a href="https://www.instagram.com/onecakeboutique/" class='intext-link'&gt;One Cake Boutique-Visit Our Ins&lt;/a&gt;
+      </code>
+
+      <h4>Rendered element:</h4>
+      <a href="https://www.instagram.com/onecakeboutique/" class='intext-link'>One Cake Boutique-Visit Our Ins</a>
+    </section>
+
+
+    <!-- Default Button styling section -->
+    <section class="element">
+
+      <h3>Navigation Link</h3>
+
+      <h4>CSS selector:</h4>
+      <p>.button-nav</p>
+
+      <h4>Sample code:</h4>
+      <code>
+        &lt;a class="button" href="#" &gt;Button1&lt;/a&gt;
+        &lt;a class="button" href="#" &gt;Button2&lt;/a&gt;
+      </code>
+
+      <h4>Rendered element:</h4>
+      <a class="button-nav" href="#">Button1</a>
+      <a class="button-nav" href="#">Button2</a>
+
+    </section>
+
+
+    <section class="element">
+      <h3>Submit/Reset Buttons</h3>
+
+      <h4>Sample code:</h4>
+      <code>
+        &lt;form&gt;
+        &lt;button type=submit &gt;submit&lt;/button&gt;
+        &lt;button type=reset &gt;reset&lt;/button&gt;
+        &lt;/form&gt;
+      </code>
+
+      <h4>Rendered element:</h4>
+      <form>
+        <button type="submit">submit</button>
+        <button type="reset">reset</button>
+      </form>
+
+    </section>
+
+    <!-- A text input field and a label// -->
+    <section class="element">
+      <h3>Text Input Field with Label</h3>
+
+      <h4>CSS selector:</h4>
+      <p>.label-inputLabel</p>
+
+      <h4>Sample code:</h4>
+      <code>&lt;label&gt;User Login: &lt;/lable&gt; &lt;input type="text" value=""/&gt;</code>
+
+      <h4>Rendered element:</h4>
+      <label id="inputLabel"> User Login: </label><input type="text" value=""/>
+
+    </section>
+
+
+    <section class="element">
+      <h3>Radio Button with Label</h3>
+
+      <h4>CSS selector:</h4>
+      <p>.label</p>
+
+      <h4>Sample code:</h4>
+      <code>
+        &lt;label for="Chocolate"&gt;Chocolate&lt;/label&gt;&lt;/br&gt;
+        &lt;label for="Strawberry"&gt;Strawberry&lt;/label&gt;&lt;/br&gt;
+        &lt;label for="Cheese"&gt;Cheese&lt;/label&gt;&lt;/br&gt;
+      </code>
+
+      <h4>Rendered element:</h4>
+      <input type="radio" id="Chocolate" name="flavor" value="Chocolate">
+      <label for="Chocolate">Chocolate</label><br>
+      <input type="radio" id="Strawberry" name="flavor" value="Strawberry">
+      <label for="Strawberry">Strawberry</label><br>
+      <input type="radio" id="Cheese" name="flavor" value="Cheese">
+      <label for="Cheese">Cheese</label><br>
+
+    </section>
+
+    <!-- An image as a link// -->
+    <section class="element">
+      <h3>Image as a Link</h3>
+      <div class="picHover1">
+        <a href="https://www.instagram.com/onecakeboutique/"><img alt="An image of the cake" src="img/o.jpg" class="img1"></a>
+        <div class="overlay1">
+          <div class="text1"><a href="https://www.instagram.com/onecakeboutique/">Learn More</a></div>
+        </div>
+      </div>
+    </section>
+
+
+  </section>
+  <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+  <!-- TEXT ELEMENTS SECTION // -->
+  <section id="text_elements">
+    <h2>Text Elements</h2>
+
+    <!-- Four levels of heading// -->
+    <section class="element">
+      <h3>Headings</h3>
+
+      <h4>Sample code:</h4>
+      <code>
+        &lt;h1&gt;This is Heading 1&lt;/h1&gt;
+        &lt;h2&gt;This is Heading 2&lt;/h2&gt;
+        &lt;h3&gt;This is Heading 3&lt;/h3&gt;
+        &lt;h4&gt;This is Heading 4&lt;/h4&gt;
+      </code>
+
+      <h4>Rendered element:</h4>
+      <h1>This is Heading 1</h1>
+      <h2>This is Heading 2</h2>
+      <h3>This is Heading 3</h3>
+      <h4>This is Heading 4</h4>
+    </section>
+
+    <!-- A paragraph// -->
+    <section class="element">
+      <h3>Paragraphs</h3>
+
+      <h4>Sample code:</h4>
+      <code>&lt;p&gt;One Cake Boutique is a cake/dessert brand located in Richmond, BC. This brand was established by a group of young cake lovers, aiming to provide both great taste and amazing visual experiences. With the enthusiasm of beautiful cake, One Cake Boutique is always challenging the status-quo of cake making and cake design, preferring to integrate classic styles and the latest popular elements.&lt;p&gt;</code>
+
+      <h4>Rendered element:</h4>
+      <div class="intro">
+        <p>One Cake Boutique is a cake/dessert brand located in Richmond, BC. This brand was established by a group of young cake lovers, aiming to provide both great taste and amazing visual experiences. With the enthusiasm of beautiful cake, One Cake Boutique is always challenging the status-quo of cake making and cake design, preferring to integrate classic styles and the latest popular elements.</p>
+      </div>
+    </section>
+
+    <section class="element">
+      <h3>Numbered Lists</h3>
+
+      <h4>CSS selector:</h4>
+      <p>.ol-products</p>
+
+      <h4>Sample code:</h4>
+      <code>
+        &lt;ol id="products"&gt;
+        &lt;li&gt;Cream meets Fruits&lt;/li&gt;
+        &lt;li&gt;Season Specials&lt;/li&gt;
+        &lt;li&gt;Flowery White&lt;/li&gt;
+        &lt;li&gt;Birthday Superstar&lt;/li&gt;
+        &lt;/ol&gt;
+      </code>
+
+      <h4>Rendered element:</h4>
+      <ol id="products">
+        <li>Cream meets Fruits</li>
+        <li>Season Specials</li>
+        <li>Flowery White</li>
+        <li>Birthday Superstar</li>
+      </ol>
+
+    </section>
+
+  </section>
+  <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+  <!-- COMBINED ELEMENTS SECTION // -->
+  <section id="combined_elements">
+    <h2>Combined Elements</h2>
+
+    <section class="element">
+      <h3>Main Navigation</h3>
+
+      <h4>CSS selector:</h4>
+      <p>.button-nav</p>
+
+      <h4>Sample code:</h4>
+      <code>
+        &lt;a class="button" href="#" &gt;Homepage&lt;/a&gt;
+        &lt;a class="button" href="#" &gt;Cake&lt;/a&gt;
+        &lt;a class="button" href="#" &gt;Drink & More&lt;/a&gt;
+        &lt;a class="button" href="#" &gt;About Us&lt;/a&gt;
+      </code>
+
+      <h4>Rendered element:</h4>
+      <a class="button-nav" href="#">Homepage</a>
+      <a class="button-nav" href="#">Cake</a>
+      <a class="button-nav" href="#">Drink & More</a>
+      <a class="button-nav" href="#">About Us</a>
+    </section>
+
+    <section class="element">
+      <h3>Product/Service Listing</h3>
+      <h4>Please refer to "product.html"</h4>
+
+    </section>
+
+    <section class="element">
+      <h3>Checkout Cart</h3>
+
+      <h4>Please refer to "checkout.html"</h4>
+
+
+    </section>
+
+  </section>
+
+
+  <section id="DesignElements">
+    <h2>Branding Ideas</h2>
+    <p>The company "One Cake Boutique" is a cake/dessert brand, aiming to provide both great taste and amazing visual experiences for the customers. The company would not only make classic styles of cakes but also would like to tie the popular elements into the products. The concept and slogan of the company would be "Stay Simple, Stay True."</p><br><br>
+    <p>The potential customers would mainly be young groups according to the concept and design of the brand, but also could be cake lovers for all age groups.</p><br><br>
+    <p>With the enthusiasm of beautiful cake, One Cake Boutique would challenge the status-quo of cake making and cake design, preferring to integrate classic styles and the latest popular elements, to mostly satisfy the demands of cusomers. The delicate designs for the wrap and other related products, as well as the brand concept will also be a good attraction for the customers, which matches the current popular elements.</p>
+
+    <h2>Design Elements</h2>
+    <h3>Font: Mulish</h3>
+    <img src="img/font.jpg" alt="Font info image."><br>
+    <h3>Color Pallete:</h3>
+    <img src="img/7.png" alt="Pallete image." class="pallete"><br>
+    <h3>Art Direction:</h3>
+    <p>As the brand would be a cake store taking the direction of simple styles such as flat designs, the future element designs would be simple for the logo, wrap or patterns, etc., mainly according to the color pallete above.</p>
+
+  </section>
+
+
+
+  <section id="citations">
+    <h2>Citations</h2>
+
+    <ul>
+      <li>Adams, Vernon. Designer. 2011. <strong>Mulish [Font]</strong>. Retrieved from <a href="https://fonts.google.com/specimen/Mulish?sidebar.open=true&selection.family=Mulish:wght@300#standard-styles">https://fonts.google.com/specimen/Mulish?sidebar.open=true&selection.family=Mulish:wght@300#standard-styles</a></li>
+      <li>Hua, Rose. 2019. <strong>Photos for One Cake Boutique [Media]</strong>. Retrieved from <a href="https://www.yelp.com/biz_photos/one-cake-boutique-richmond?select=V-jwVATAZmUnGX19fmlk8Q">https://www.yelp.com/biz_photos/one-cake-boutique-richmond?select=V-jwVATAZmUnGX19fmlk8Q</a>.</li>
+      <li>COOLORS. <strong>Image of the color pallete [Media]</strong>. Retrieved from <a href="https://coolors.co/ffcab1-499bdf-fffef4-f7ece7-e7a93e">https://coolors.co/ffcab1-499bdf-fffef4-f7ece7-e7a93e</a>.</li>
+    </ul>
+
+  </section>
+
+
+
+</body>
 </html>
