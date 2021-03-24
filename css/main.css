@@ -293,6 +293,32 @@ hr {
   justify-content: space-evenly;
 }
 
+/*
+  Project Analysis SECTION -------------------
+*/
+
+.pj_analysis{
+  display: flex;
+}
+
+.pj_analysis_img{
+  width: 60%;
+}
+
+.pj_analysis_img img{
+  margin-top: 1rem;
+}
+
+.pj_analysis_text{
+  width: 35%;
+  margin-left: 5%;
+}
+
+.pj_analysis_text h4{
+  margin:2rem 0;
+}
+
+
 
 
 
