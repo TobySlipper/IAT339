@@ -101,7 +101,7 @@ button{
   margin-right: 1rem;
 
   border-width: 2px;
-  border-style: dashed;
+  border-style: solid;
   border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
 }
 
@@ -112,11 +112,15 @@ hr {
   border-top: 1px dotted grey;
 }
 
-code {
-  background-color: #EEE;
-  padding: 0.5rem;
-  display: block;
-  border: 0.5px solid black;
+.code_block {
+  background-color: #272c34;
+  border-radius: 4px;
+  padding: 1.2rem 2rem;
+  padding-bottom: 0;
+  margin-top: 2rem;
+  color: #fff;
+  max-height: 20rem;
+  overflow: scroll;
 }
 
 
@@ -125,11 +129,11 @@ code {
 */
 
 /* Styling for the navigation button */
-.button-nav {
+.button_nav {
   display: inline-block;
   color: #E7A93D;
   background-color: #F7ECE7;
-  padding: 1rem;
+  padding: 0.8rem;
   text-decoration: none;
   transition-property: background-color;
   transition-duration: 0.5s;
