@@ -4,14 +4,15 @@
 */
 body {
   font-family: 'Mulish', sans-serif;
-  padding: 2rem;
-  margin-left: 5%;
-  margin-right: 5%;
-  background-color: #F7ECE7;
 }
 
 * {
   box-sizing: border-box;
+}
+
+section{
+  margin-left: 3%;
+  margin-right: 3%;
 }
 
 .element {
@@ -26,7 +27,7 @@ a {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 5rem;
   color: black;
   padding-bottom: 1rem;
   text-align: center;
@@ -35,6 +36,7 @@ h1 {
 
 h2 {
   margin-top: 5rem;
+  font-size: 2rem;
   color: #499BDF;
 }
 
