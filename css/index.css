@@ -1,0 +1,9 @@
+
+.main_nav{
+  color: white;
+}
+
+.main_nav:hover{
+  color: black;
+  transition: 0.81s;
+}
