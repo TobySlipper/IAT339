@@ -3,6 +3,14 @@ body{
   margin: 0!important;
 }
 
+p{
+  color: white;
+}
+
+h4{
+  color: white;
+}
+
 #homepage{
   background-image: url("../img/bg1.png");
   background-repeat: no-repeat;
@@ -68,4 +76,17 @@ body{
 .hp_personal_info{
   width: 58%;
   text-align: center;
+}
+
+#project_analysis{
+  background-color: #001815;
+  margin: 0;
+}
+
+#project_analysis h2{
+  margin: 0;
+}
+
+.element{
+  border-top-style: none;
 }
