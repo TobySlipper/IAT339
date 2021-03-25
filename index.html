@@ -5,9 +5,10 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio Styleguide</title>
+  <title>YH Portfolio Page</title>
 
   <link href="css/main.css" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
@@ -17,16 +18,11 @@
 <body>
 
   <header>
-    <h1>P03 Portforlio Styleguide Page</h1>
 
     <nav class="top">
       <a href="#interactive_elements" class="top-nav">Interactive Elements</a>
       <a href="#text_elements" class="top-nav">Text Elements</a>
       <a href="#combined_elements" class="top-nav">Combined Elements</a>
-      <a href="product.html" class="top-nav">Product Listing Template</a>
-      <a href="#text_elements" class="top-nav">Text Elements</a>
-      <a href="#DesignElements" class="top-nav">Intro & Design Elements</a>
-      <a href="#citations" class="top-nav">Citations</a>
     </nav>
 
   </header>
@@ -37,126 +33,9 @@
   <section id="interactive_elements">
     <h2>Interactive Elements</h2>
 
-    <!-- An in-text link// -->
-    <section class="element">
-      <h3>In-text link</h3>
-
-      <h4>CSS selector:</h4>
-      <p>a</p>
-
-      <h4>Sample code:</h4>
-      <pre class="code_block">
-        <code>
-          &lt;a href="#" class='intext-link'&gt;This is an intext-link.&lt;/a&gt;
-        </code>
-      </pre>
-
-
-      <h4>Rendered element:</h4>
-      <a href="#" class='intext-link'>This is an intext-link.</a>
-    </section>
-
-
-    <!-- Default Button styling section -->
-    <section class="element">
-
-      <h3>Navigation Link</h3>
-
-      <h4>CSS selector:</h4>
-      <p>.button-nav</p>
-
-      <h4>Sample code:</h4>
-
-      <pre class="code_block">
-        <code>
-          &lt;a class="button" href="#" &gt;Button1&lt;/a&gt;
-          &lt;a class="button" href="#" &gt;Button2&lt;/a&gt;
-        </code>
-      </pre>
-
-      <h4>Rendered element:</h4>
-      <a class="button_nav" href="#">Button1</a>
-      <a class="button_nav" href="#">Button2</a>
-
-    </section>
-
-
-    <section class="element">
-      <h3>Submit/Reset Buttons</h3>
-
-      <h4>Sample code:</h4>
-
-      <pre class="code_block">
-        <code>
-          &lt;form&gt;
-          &lt;button type=submit &gt;submit&lt;/button&gt;
-          &lt;button type=reset &gt;reset&lt;/button&gt;
-          &lt;/form&gt;
-        </code>
-      </pre>
-
-
-      <h4>Rendered element:</h4>
-      <form>
-        <button type="submit">submit</button>
-        <button type="reset">reset</button>
-      </form>
-
-    </section>
-
-    <!-- A text input field and a label// -->
-    <section class="element">
-      <h3>Text Input Field with Label</h3>
-
-      <h4>CSS selector:</h4>
-      <p>.label-inputLabel</p>
-
-      <h4>Sample code:</h4>
-      <code>&lt;label&gt;Leave Your Email: &lt;/lable&gt; &lt;input type="text" value=""/&gt;</code>
-
-      <h4>Rendered element:</h4>
-      <label id="inputLabel"> Leave Your Email: </label><input type="text" value=""/>
-
-    </section>
-
-
-    <section class="element">
-      <h3>Radio Button with Label</h3>
-
-      <h4>CSS selector:</h4>
-      <p>.label</p>
-
-      <h4>Sample code:</h4>
-      <pre class="code_block">
-        <code>
-          &lt;label for="styleguide_radio1"&gt;Donate&lt;/label&gt;&lt;/br&gt;
-          &lt;label for="styleguide_radio2"&gt;Are you serious?&lt;/label&gt;&lt;/br&gt;
-        </code>
-      </pre>
-
-
-      <h4>Rendered element:</h4>
-      <input type="radio" id="styleguide_radio1" name="clickit" value="styleguide_radio1">
-      <label for="styleguide_radio1">Donate</label><br>
-      <input type="radio" id="styleguide_radio2" name="clickit" value="styleguide_radio2">
-      <label for="styleguide_radio2">Are you serious?</label><br>
-
-    </section>
-
-    <!-- An image as a link// -->
-    <section class="element">
-      <h3>Image as a Link</h3>
-      <div class="picHover1">
-        <a href="https://www.instagram.com/onecakeboutique/"><img alt="An image of the cake" src="img/styleguide_pic1.jpeg" class="img1"></a>
-        <div class="overlay1">
-          <div class="text1"><a href="https://github.com/TobySlipper">Learn More</a></div>
-        </div>
-      </div>
-    </section>
 
 
   </section>
-  <!-- // INTERACTIVE ELEMENTS SECTION -->
 
 
   <!-- TEXT ELEMENTS SECTION // -->
@@ -167,18 +46,6 @@
     <section class="element">
       <h3>Headings</h3>
 
-      <h4>Sample code:</h4>
-
-      <pre class="code_block">
-        <code>
-          &lt;h1&gt;This is Heading 1&lt;/h1&gt;
-          &lt;h2&gt;This is Heading 2&lt;/h2&gt;
-          &lt;h3&gt;This is Heading 3&lt;/h3&gt;
-          &lt;h4&gt;This is Heading 4&lt;/h4&gt;
-        </code>
-      </pre>
-
-      <h4>Rendered element:</h4>
       <h1>This is Heading 1</h1>
       <h2>This is Heading 2</h2>
       <h3>This is Heading 3</h3>
@@ -189,16 +56,6 @@
     <section class="element">
       <h3>Paragraphs (Bio here)</h3>
 
-      <h4>Sample code:</h4>
-      <pre class="code_block">
-        <code>&lt;p&gt;I am Yingdong He, you can just call me Toby. With the passion and curiosity of styling the beauty of the world
-        as I like, I started my journey in the space of design: associate with human, and associate with life. I value both
-        contents and apperances, as well as rules and freedom. I believe the aesthetics of design have the power of challenging
-        how we see the world.&lt;p&gt;</code>
-      </pre>
-
-
-      <h4>Rendered element:</h4>
       <div class="intro">
         <p>I am Yingdong He, you can just call me Toby. With the passion and curiosity of styling the beauty of the world
         as I like, I started my journey in the space of design: associate with human, and associate with life. I value both
@@ -209,20 +66,6 @@
 
     <section class="element">
       <h3>Numbered Lists</h3>
-
-      <h4>CSS selector:</h4>
-      <p>.ol-products</p>
-
-      <h4>Sample code:</h4>
-      <pre class="code_block">
-        <code>
-          &lt;ol id="products"&gt;
-            &lt;li&gt;I am positive.&lt;/li&gt;
-            &lt;li&gt;I am outgoing.&lt;/li&gt;
-            &lt;li&gt;I am friendly.&lt;/li&gt;
-          &lt;/ol&gt;
-        </code>
-      </pre>
 
       <h4>Rendered element:</h4>
       <ol id="products">
@@ -245,33 +88,13 @@
     <section class="element">
       <h3>Main Navigation</h3>
 
-      <h4>CSS selector:</h4>
-      <p>.button-nav</p>
 
-      <h4>Sample code:</h4>
-      <pre class="code_block">
-        <code>
-          &lt;a class="button" href="#" &gt;Homepage&lt;/a&gt;
-          &lt;a class="button" href="#" &gt;Cake&lt;/a&gt;
-          &lt;a class="button" href="#" &gt;Drink & More&lt;/a&gt;
-          &lt;a class="button" href="#" &gt;About Us&lt;/a&gt;
-        </code>
-      </pre>
-
-
-      <h4>Rendered element:</h4>
       <a class="button-nav" href="#">Homepage</a>
       <a class="button-nav" href="#">Cake</a>
       <a class="button-nav" href="#">Drink & More</a>
       <a class="button-nav" href="#">About Us</a>
     </section>
 
-    <section class="element">
-      <h3>Font</h3>
-
-      <img src="img/font.jpg" alt="Font info image.">
-
-    </section>
 
   </section>
 
@@ -348,19 +171,6 @@
 
 
     </section>
-
-  </section>
-
-
-
-  <section id="citations">
-    <h2>Citations</h2>
-
-    <ul>
-      <li>Adams, Vernon. Designer. 2011. <strong>Mulish [Font]</strong>. Retrieved from <a href="https://fonts.google.com/specimen/Mulish?sidebar.open=true&selection.family=Mulish:wght@300#standard-styles">https://fonts.google.com/specimen/Mulish?sidebar.open=true&selection.family=Mulish:wght@300#standard-styles</a></li>
-      <li>Hua, Rose. 2019. <strong>Photos for One Cake Boutique [Media]</strong>. Retrieved from <a href="https://www.yelp.com/biz_photos/one-cake-boutique-richmond?select=V-jwVATAZmUnGX19fmlk8Q">https://www.yelp.com/biz_photos/one-cake-boutique-richmond?select=V-jwVATAZmUnGX19fmlk8Q</a>.</li>
-      <li>COOLORS. <strong>Image of the color pallete [Media]</strong>. Retrieved from <a href="https://coolors.co/ffcab1-499bdf-fffef4-f7ece7-e7a93e">https://coolors.co/ffcab1-499bdf-fffef4-f7ece7-e7a93e</a>.</li>
-    </ul>
 
   </section>
 
