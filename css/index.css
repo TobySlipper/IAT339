@@ -9,6 +9,21 @@ body{
   margin-right: 0;
 }
 
+.top_nav_left{
+  padding: 1rem;
+  width: 55%;
+  display: flex;
+  margin-left: 2%;
+}
+
+
+.top_nav_right{
+  padding: 1rem;
+  width: 45%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .main_nav{
   color: white;
   padding: 1rem;
@@ -28,7 +43,8 @@ body{
 .square_pad{
   width: 30%;
   background-color: rgba(255,255,255,0.2);
-  margin-left: 55%;
+  margin-left: 58%;
+  margin-top: 10%;
 }
 
 .square_pad_text{
