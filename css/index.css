@@ -1,9 +1,92 @@
 
-.main_nav{
+body{
+  margin: 0!important;
+}
+
+p{
   color: white;
 }
 
+h4{
+  color: white;
+}
+
+#homepage{
+  background-image: url("../img/bg1.png");
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: cover;
+  min-height: 100vh;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.top_nav_left{
+  padding: 1rem;
+  width: 55%;
+  display: flex;
+  margin-left: 2%;
+}
+
+.fa {
+  font-size: 2rem!important;
+  margin-bottom: 2rem;
+}
+
+.fa_icons{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.top_nav_right{
+  padding: 1rem;
+  width: 45%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.main_nav{
+  color: white;
+  padding: 1rem;
+}
+
 .main_nav:hover{
-  color: black;
+  color: rgba(255,255,255,0.2);
   transition: 0.81s;
+}
+
+#homepage h1{
+  color: white;
+  text-align: center;
+
+}
+
+.square_pad{
+  width: 30%;
+  background-color: rgba(255,255,255,0.2);
+  margin-left: 58%;
+  margin-top: 10%;
+}
+
+.square_pad_text{
+  color: white;
+  padding: 3rem;
+}
+
+.hp_personal_info{
+  width: 58%;
+  text-align: center;
+}
+
+#project_analysis{
+  background-color: #001815;
+  margin: 0;
+}
+
+#project_analysis h2{
+  margin: 0;
+}
+
+.element{
+  border-top-style: none;
 }
