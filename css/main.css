@@ -27,10 +27,10 @@ a {
 
 h1 {
   font-size: 3rem;
-  color: #FFFEF4;
+  color: black;
   padding-bottom: 1rem;
   text-align: center;
-  -webkit-text-stroke: 0.1px #499BDF;
+  /* -webkit-text-stroke: 0.1px #499BDF; */
 }
 
 h2 {
@@ -67,6 +67,7 @@ img {
 p {
   font-size: 1rem;
   margin-top: 0;
+  text-align: justify;
 }
 
 li {
@@ -299,6 +300,7 @@ hr {
 
 .pj_analysis{
   display: flex;
+  margin-bottom: 2rem;
 }
 
 .pj_analysis_img{
@@ -318,6 +320,14 @@ hr {
   margin:2rem 0;
 }
 
+.pj_analysis_text2{
+  width: 35%;
+  margin-right: 5%;
+}
+
+.pj_analysis_text2 h4{
+  margin:2rem 0;
+}
 
 
 
