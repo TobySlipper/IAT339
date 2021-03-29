@@ -135,6 +135,25 @@ h3{
   margin:2rem 0;
 }
 
+/*
+  Who Am I SECTION -------------------
+*/
+.pic_note{
+  width: 10%;
+  background-color: rgba(255,255,255,0.2);
+  margin-left: 15%;
+  margin-top: 10%;
+}
+
+.pic_note_text{
+  color: white;
+  padding: 1rem;
+}
+
+.about_me{
+  display: flex;
+}
+
 #contact{
   background-color: green;
   margin: 0;
