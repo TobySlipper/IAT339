@@ -1,6 +1,7 @@
 
 body{
   margin: 0!important;
+  background-color: #001815;
 }
 
 p{
@@ -8,6 +9,10 @@ p{
 }
 
 h4{
+  color: white;
+}
+
+h3{
   color: white;
 }
 
@@ -23,7 +28,7 @@ h4{
 
 .top_nav_left{
   padding: 1rem;
-  width: 55%;
+  width: 53%;
   display: flex;
   margin-left: 2%;
 }
@@ -67,7 +72,7 @@ h4{
 .square_pad{
   width: 30%;
   background-color: rgba(255,255,255,0.2);
-  margin-left: 58%;
+  margin-left: 55%;
   margin-top: 10%;
 }
 
@@ -92,4 +97,45 @@ h4{
 
 .element{
   border-top-style: none;
+}
+
+/*
+  Project Analysis SECTION -------------------
+*/
+
+.pj_analysis{
+  display: flex;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.pj_analysis_img{
+  width: 60%;
+}
+
+.pj_analysis_img img{
+  margin-top: 1rem;
+}
+
+.pj_analysis_text{
+  width: 35%;
+  margin-left: 5%;
+}
+
+.pj_analysis_text h4{
+  margin:2rem 0;
+}
+
+.pj_analysis_text2{
+  width: 35%;
+  margin-right: 5%;
+}
+
+.pj_analysis_text2 h4{
+  margin:2rem 0;
+}
+
+#contact{
+  background-color: green;
+  margin: 0;
 }
