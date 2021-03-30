@@ -4,6 +4,7 @@
 */
 body {
   font-family: 'Mulish', sans-serif;
+  background-color: #001815;
 }
 
 * {
@@ -28,7 +29,7 @@ a {
 
 h1 {
   font-size: 5rem;
-  color: black;
+  color: white;
   padding-bottom: 1rem;
   text-align: center;
   /* -webkit-text-stroke: 0.1px #499BDF; */
@@ -44,10 +45,12 @@ h2 {
 h3 {
   font-style: italic;
   margin-top: 1rem;
+  color: white;
 }
 
 h4 {
   margin-bottom: 0.2rem;
+  color: white;
 }
 
 h5 {
@@ -70,10 +73,12 @@ p {
   font-size: 1rem;
   margin-top: 0;
   text-align: justify;
+  color: white;
 }
 
 li {
   margin-bottom: 1rem;
+  color: white;
 }
 
 nav a:hover, nav a:focus {
@@ -85,7 +90,8 @@ input:hover, input:focus{
 }
 
 button:hover{
-  background-color: #FFCAB1;
+  color: rgba(255,255,255,0.2);
+  transition: 0.81s;
 }
 
 button:focus{
@@ -94,7 +100,7 @@ button:focus{
 
 button{
   color: #E7A93D;
-  background-color: #F7ECE7;
+  background-color: transparent;
   padding: 0.5rem;
   text-decoration: none;
   transition-property: background-color;
@@ -106,6 +112,10 @@ button{
   border-width: 2px;
   border-style: solid;
   border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+}
+
+label{
+  color: white;
 }
 
 hr {
@@ -132,21 +142,14 @@ hr {
 */
 
 /* Styling for the navigation button */
-.button_nav {
-  display: inline-block;
-  color: #E7A93D;
-  background-color: #F7ECE7;
-  padding: 0.8rem;
-  text-decoration: none;
-  transition-property: background-color;
-  transition-duration: 0.5s;
-  border-radius: 1em;
-  margin-left: 1rem;
-  margin-right: 1rem;
+.main_nav{
+  color: white;
+  padding: 1rem;
+}
 
-  border-width: 2px;
-  border-style: dashed;
-  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+.main_nav:hover{
+  color: rgba(255,255,255,0.2);
+  transition: 0.81s;
 }
 
 .button-nav1 {
@@ -183,7 +186,7 @@ hr {
 
 .top-nav {
   color: #E7A93D;
-  background-color: #F7ECE7;
+  background-color: none;
   padding: 0.8rem;
   text-decoration: none;
   transition-property: background-color;
@@ -196,8 +199,9 @@ hr {
   border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
 }
 
-.top-nav:hover, .button-nav:focus {
-  background-color: #FFCAB1;
+.top-nav:hover{
+  color: rgba(255,255,255,0.2);
+  transition: 0.81s;
 }
 
 .intext-link{
