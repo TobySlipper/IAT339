@@ -4,6 +4,10 @@ body{
   background-color: #001815;
 }
 
+img{
+  border: none;
+}
+
 p{
   color: white;
 }
@@ -150,8 +154,13 @@ h3{
   padding: 1rem;
 }
 
-.about_me{
+
+.softwares{
   display: flex;
+}
+
+.my_skills img{
+  max-width: 25px;
 }
 
 #contact{
