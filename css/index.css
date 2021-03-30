@@ -142,11 +142,22 @@ h3{
 /*
   Who Am I SECTION -------------------
 */
+.about_me{
+  display: flex;
+}
+
+.pic_info{
+  width: 40%;
+}
+
+.pic_me{
+  max-width: 50%;
+}
+
 .pic_note{
   width: 10%;
   background-color: rgba(255,255,255,0.2);
-  margin-left: 15%;
-  margin-top: 10%;
+  text-align: right;
 }
 
 .pic_note_text{
@@ -159,8 +170,21 @@ h3{
   display: flex;
 }
 
+.my_skills{
+  width: 60%;
+}
+
 .my_skills img{
   max-width: 25px;
+}
+
+.my_skills h4{
+  margin-bottom: 2rem;
+}
+
+.software_list{
+  width: 40%;
+  margin-right: 10%;
 }
 
 #contact{
