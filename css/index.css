@@ -4,6 +4,10 @@ body{
   background-color: #001815;
 }
 
+img{
+  border: none;
+}
+
 p{
   color: white;
 }
@@ -82,13 +86,12 @@ h3{
 }
 
 .hp_personal_info{
-  width: 58%;
+  width: 50%;
   text-align: center;
 }
 
 #project_analysis{
   background-color: #001815;
-  margin: 0;
 }
 
 #project_analysis h2{
@@ -135,7 +138,95 @@ h3{
   margin:2rem 0;
 }
 
+/*
+  Who Am I SECTION -------------------
+*/
+.about_me{
+  display: flex;
+}
+
+.pic_info{
+  width: 40%;
+}
+
+.pic_me{
+  max-width: 50%;
+  margin-left: 5%;
+}
+
+.pic_note{
+  width: 10%;
+  background-color: rgba(255,255,255,0.2);
+  text-align: right;
+}
+
+.pic_note_text{
+  color: white;
+  padding: 1rem;
+}
+
+
+.softwares{
+  display: flex;
+  padding: 2rem;
+}
+
+.my_skills{
+  width: 50%;
+}
+
+.my_skills img{
+  max-width: 25px;
+}
+
+.my_skills h4{
+  margin-bottom: 2rem;
+}
+
+.software_list{
+  width: 40%;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
 #contact{
   background-color: green;
   margin: 0;
+}
+
+
+.software_pad{
+  width: 50%;
+  background-color: none;
+  border: 2px solid white;
+  margin-left: 40%;
+  margin-top: 10%;
+}
+
+.experience_pad{
+  width: 35%;
+  margin-left: 10%;
+  margin-top: -2rem;
+  border: 2px solid gold;
+}
+
+#who_am_I h2{
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 4rem;
+  text-align: right;
+  margin-right: 20%;
+}
+
+.empty_h2{
+  margin-top: -12rem;
+}
+
+.empty_h2 h2{
+  -webkit-text-stroke: 2px #499BDF;
+  -webkit-text-fill-color: transparent;
+}
+
+.solid_h2{
+  margin-bottom: 2rem;
 }
