@@ -25,6 +25,7 @@ section{
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 h1 {
@@ -82,7 +83,8 @@ li {
 }
 
 nav a:hover, nav a:focus {
-  text-decoration: none;
+  color: rgba(255,255,255,0.2);
+  transition: 0.81s;
 }
 
 input:hover, input:focus{
@@ -114,7 +116,17 @@ button{
   border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
 }
 
-label{
+input[type=text] {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  display: block;
   color: white;
 }
 
@@ -152,20 +164,6 @@ hr {
   transition: 0.81s;
 }
 
-.button-nav1 {
-  color: #E7A93D;
-  text-decoration: none;
-  transition-property: background-color;
-  transition-duration: 0.5s;
-  border-radius: 0.5rem;
-  width:20%;
-  text-align: center;
-}
-
-.button-nav1:hover, .button-nav1:focus {
-  color: white;
-}
-
 .page_button{
   display: flex;
 }
@@ -173,7 +171,6 @@ hr {
 .button-nav:hover, .button-nav:focus {
   background-color: #FFCAB1;
 }
-
 
 .top{
   display: flex;
@@ -209,7 +206,8 @@ hr {
 }
 
 .intext-link:hover{
-  color: #E7A93D;
+  color: rgba(255,255,255,0.2);
+  transition: 0.81s;
 }
 
 .img1{
@@ -272,35 +270,6 @@ hr {
   max-height: 15rem;
 }
 
-
-/*
-  COMBINED ELEMENTS -------------------
-*/
-.productList{
-  display: flex;
-  max-width: 100%;
-  position: relative;
-  align-items: stretch;
-  justify-content: space-evenly;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  flex-wrap: wrap;
-}
-
-.products{
-  flex-direction: row;
-  text-align: center;
-}
-
-.product_name{
-  color: #499BDF!important;
-}
-
-.page_button{
-  display: flex;
-  justify-content: space-evenly;
-}
-
 /*
   Project Analysis SECTION -------------------
 */
@@ -337,144 +306,6 @@ hr {
 }
 
 
-
-
-/* shopping cart page css */
-.cart_toptag{
-  display: flex;
-  margin-top: 3rem;
-}
-
-
-.empty50{
-  width: 0;
-}
-
-.empty75{
-  width: 0;
-}
-
-.empty70{
-  width:70%;
-}
-
-.cart_toptag1{
-  width:10%;
-  text-align: center;
-
-}
-
-.cart_toptag2{
-  width:20%;
-  text-align: center;
-}
-
-.cart_item{
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.cart_item_pic{
-  width:30%;
-  text-align: center;
-  margin-bottom: 0.5rem;
-  margin-top: 0.5rem;
-}
-
-.cart_item_info{
-  flex-direction: row;
-  text-align: center;
-  width:40%;
-}
-
-.cart_item_amount{
-  width:10%;
-  text-align: center;
-}
-
-.price_sum{
-  width:20%;
-  text-align: center;
-}
-
-.total_cart{
-  text-align: right;
-}
-
-.total_price{
-  display: flex;
-}
-
-.empty80{
-  width:80%;
-}
-
-.total_price_h3{
-  width: 20%!important;
-  text-align: center;
-}
-
-.total_price_h6{
-  width: 20%!important;
-  text-align: center!important;
-}
-
-.cart_buttons{
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 1rem;
-  margin-top: -1rem;
-}
-
-.payment_buttons{
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 1rem;
-  margin-top: 3rem;
-}
-
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -1rem;
-}
-
-/* flex shrink percentage of the input box */
-.col_25 {
-  flex: 25%;
-}
-
-.col_50 {
-  flex: 50%;
-}
-
-.col_25,
-.col_50{
-  padding: 0 1rem;
-}
-
-.payment_box {
-  background-color: #FFFEF4;
-  padding: 5px 20px 15px 20px;
-  border: 1px solid lightgrey;
-  border-radius: 1rem;
-  margin-top: 3rem;
-}
-
-input[type=text] {
-  width: 100%;
-  margin-bottom: 1rem;
-  padding: 0.8rem;
-  border: 1px solid lightgrey;
-  border-radius: 3px;
-}
-
-label {
-  margin-bottom: 0.5rem;
-  display: block;
-}
 
 
 @media only screen and (max-width:920px){
