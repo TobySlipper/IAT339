@@ -8,7 +8,6 @@ img{
   border: none;
 }
 
-
 #homepage{
   background-image: url("../img/bg1.png");
   background-repeat: no-repeat;
@@ -170,7 +169,7 @@ img{
 .software_pad{
   width: 50%;
   background-color: none;
-  border: 2px solid white;
+  border: 2px solid rgba(255,255,255,0.8);
   margin-left: 40%;
   margin-top: 10%;
 }
@@ -225,6 +224,14 @@ img{
 }
 
 #contact{
-  background-color: green;
+  background-color: #499BDF;
   margin: 0;
+}
+
+.footer h1{
+  font-size: 2rem;
+}
+
+.footer{
+  padding-top: 1rem;
 }
