@@ -169,7 +169,7 @@ img{
 .software_pad{
   width: 50%;
   background-color: none;
-  border: 2px solid rgba(255,255,255,0.8);
+  border: 2px solid rgba(255,255,255,0.9);
   margin-left: 40%;
   margin-top: 10%;
 }
@@ -188,7 +188,7 @@ img{
   width: 35%;
   margin-left: 10%;
   margin-top: -1.5rem;
-  border: 2px solid gold;
+  border: 2px solid pink;
 }
 
 .int_positions{
@@ -234,4 +234,36 @@ img{
 
 .footer{
   padding-top: 1rem;
+}
+
+.my_info{
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-bottom: 2rem;
+}
+
+.contact_place{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+}
+
+
+.contact_place h4{
+  margin-left: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.contact_place img{
+  max-width: 40px;
+  max-height: 40px;
+  vertical-align: middle;
+}
+
+.copyright p{
+  text-align: center;
 }
