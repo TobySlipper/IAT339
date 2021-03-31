@@ -8,7 +8,6 @@ img{
   border: none;
 }
 
-
 #homepage{
   background-image: url("../img/bg1.png");
   background-repeat: no-repeat;
@@ -163,30 +162,44 @@ img{
 }
 
 .software_list{
-  width: 40%;
-  margin-right: 5%;
+  width: 45%;
   margin-left: 5%;
 }
-
-#contact{
-  background-color: green;
-  margin: 0;
-}
-
 
 .software_pad{
   width: 50%;
   background-color: none;
-  border: 2px solid white;
+  border: 2px solid rgba(255,255,255,0.8);
   margin-left: 40%;
   margin-top: 10%;
+}
+
+.software_pad h4{
+  margin-top: 2rem;
+  text-align: center;
+  color: #499BDF;
+}
+
+.job_title img{
+  max-width: 32px;
 }
 
 .experience_pad{
   width: 35%;
   margin-left: 10%;
-  margin-top: -2rem;
+  margin-top: -1.5rem;
   border: 2px solid gold;
+}
+
+.int_positions{
+  padding: 2rem;
+}
+
+.int_positions h4{
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #499BDF;
 }
 
 #who_am_I h2{
@@ -208,4 +221,17 @@ img{
 
 .solid_h2{
   margin-bottom: 2rem;
+}
+
+#contact{
+  background-color: #499BDF;
+  margin: 0;
+}
+
+.footer h1{
+  font-size: 2rem;
+}
+
+.footer{
+  padding-top: 1rem;
 }
