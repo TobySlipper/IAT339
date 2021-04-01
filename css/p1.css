@@ -1,0 +1,371 @@
+
+body{
+  margin: 0!important;
+  background-color: #001815;
+}
+
+img{
+  border: none;
+}
+
+.top{
+  justify-content: space-between;
+}
+
+.top_nav_left{
+  padding: 1rem;
+  display: flex;
+  margin-left: 2%;
+}
+
+.top_nav_right{
+  padding: 1rem;
+  display: flex;
+  margin-right: 2%;
+  justify-content: flex-end;
+}
+
+.phone_menu{
+  display: none;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 20px;
+  height: 2px;
+  background-color: rgba(255,255,255,0.9);
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+.fa {
+  font-size: 2rem!important;
+  margin-bottom: 2rem;
+}
+
+.fa_icons{
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+  margin-left: 30%;
+  align-self: center;
+}
+
+.element{
+  border-top-style: none;
+}
+
+/*
+  Project Analysis SECTION -------------------
+*/
+#project_analysis{
+  background-color: #001815;
+}
+
+#project_analysis h2{
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 3.8rem;
+}
+
+#project_analysis span{
+  -webkit-text-stroke: 2px #499BDF;
+  -webkit-text-fill-color: transparent;
+}
+
+.pj_analysis{
+  display: inline-block!important;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.pj_analysis_img{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.pj_img_div{
+  width: 48%;
+}
+
+.pj_analysis_text{
+  width: 100%;
+  margin-left: 0;
+  margin-top: 4rem;
+}
+
+.pj_analysis_text h4{
+  margin:2rem 0;
+  color: #499BDF;
+}
+
+.pj_analysis_text2{
+  width: 35%;
+  margin-right: 5%;
+}
+
+.pj_analysis_text2 h4{
+  margin:2rem 0;
+}
+
+
+/* Contact Me Section */
+#contact{
+  background-color: #499BDF;
+  margin: 0;
+}
+
+.footer h1{
+  font-size: 2rem;
+}
+
+.footer{
+  padding-top: 1rem;
+}
+
+.my_info{
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-bottom: 2rem;
+}
+
+.my_info2{
+  display: none;
+}
+
+.my_info3{
+  display: none;
+}
+
+.contact_place{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+}
+
+
+.contact_place h4{
+  margin-left: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.contact_place img{
+  max-width: 40px;
+  max-height: 40px;
+  vertical-align: middle;
+}
+
+.copyright{
+  margin: 0 5%;
+}
+
+.copyright p{
+  text-align: center;
+}
+
+
+/* Responsive Designs */
+@media only screen and (max-width:1255px){
+  #project_analysis h2{
+    font-size: 3.5rem;
+  }
+}
+
+@media only screen and (max-width:1080px){
+  .my_info {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+}
+
+@media only screen and (max-width:990px){
+
+  #project_analysis h2{
+    font-size: 3.3rem;
+  }
+}
+
+@media only screen and (max-width:935px){
+  .my_info{
+    display: none;
+  }
+
+  .my_info2{
+    display: contents;
+  }
+
+  .my_info_row1>.contact_place{
+    width: 50%;
+  }
+
+  .my_info_row2>.contact_place{
+    width: 50%;
+  }
+
+  .contact_place{
+    justify-content: flex-start;
+  }
+
+  .my_info_row1{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 14%;
+    margin-right: 10%;
+    margin-bottom: 1rem;
+  }
+
+  .my_info_row2{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 14%;
+    margin-right: 10%;
+  }
+
+}
+
+@media only screen and (max-width:800px){
+
+  #project_analysis h2{
+    font-size: 3rem;
+  }
+
+  .pj_analysis {
+    margin-top: 1.5rem;
+  }
+
+  .pj_analysis_text{
+    margin-top: 3rem;
+  }
+
+  .footer h1{
+    font-size: 1.5rem;
+  }
+
+  .contact_place h4{
+    font-size: 12px;
+  }
+
+}
+
+@media only screen and (max-width:760px){
+
+  .top_nav_left{
+    padding-left: 0;
+  }
+
+  .top_nav_right{
+    padding-right: 0;
+  }
+
+  #project_analysis h2{
+    font-size: 2.7rem;
+  }
+
+  .pj_analysis_text h4 {
+    font-size: 14px;
+  }
+
+}
+
+@media only screen and (max-width:660px){
+
+  .pj_analysis {
+    margin-top: 1rem;
+  }
+
+  .pj_analysis_img {
+    flex-direction: column;
+  }
+
+  .pj_img_div {
+    width: 100%;
+  }
+
+  .pj_analysis_text{
+    margin-top: 2.5rem;
+  }
+
+  .pj_analysis_text h4 {
+    margin: 1rem 0;
+  }
+
+}
+
+@media only screen and (max-width:540px){
+
+  .top_nav_left{
+    padding-left: 1rem;
+  }
+
+  .top_nav_right{
+    display: none;
+  }
+
+  .phone_menu{
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 3%;
+    align-self: center;
+    padding: 1rem;
+  }
+
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-5px, 4px);
+    transform: rotate(-45deg) translate(-5px, 4px);
+  }
+
+  .change .bar2 {
+    opacity: 0;
+  }
+
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-5px, -5px);
+    transform: rotate(45deg) translate(-5px, -5px);
+  }
+
+  .fa_icons{
+    width: 60%;
+    margin-left: 20%;
+  }
+
+  .pj_analysis_text h4 {
+    font-size: 12px;
+  }
+
+  .contact_place img {
+    max-width: 30px;
+    max-height: 30px;
+    vertical-align: middle;
+  }
+
+}
+
+@media only screen and (max-width:500px){
+
+  #project_analysis h2{
+    font-size: 2rem;
+  }
+
+  .my_info2{
+    display: none;
+  }
+
+  .my_info3{
+    display: contents;
+  }
+
+  .my_info3>.contact_place{
+    margin-left: 25%;
+    width: 50%;
+    margin-bottom: 0.5rem;
+  }
+
+  .contact_place h4{
+    margin-left: 1.5rem;
+  }
+}
