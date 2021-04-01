@@ -88,53 +88,10 @@ img{
   margin-left: 5%;
 }
 
-#project_analysis{
-  background-color: #001815;
-}
-
-#project_analysis h2{
-  margin: 0;
-}
-
 .element{
   border-top-style: none;
 }
 
-/*
-  Project Analysis SECTION -------------------
-*/
-
-.pj_analysis{
-  display: flex;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-}
-
-.pj_analysis_img{
-  width: 60%;
-}
-
-.pj_analysis_img img{
-  margin-top: 1rem;
-}
-
-.pj_analysis_text{
-  width: 35%;
-  margin-left: 5%;
-}
-
-.pj_analysis_text h4{
-  margin:2rem 0;
-}
-
-.pj_analysis_text2{
-  width: 35%;
-  margin-right: 5%;
-}
-
-.pj_analysis_text2 h4{
-  margin:2rem 0;
-}
 
 /*
   Who Am I SECTION -------------------
@@ -234,18 +191,68 @@ img{
   margin-right: 18%;
 }
 
-
-
 .empty_h2 h2{
   -webkit-text-stroke: 2px #499BDF;
   -webkit-text-fill-color: transparent;
 }
 
 .solid_h2{
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
   margin-top: -12rem;
 }
 
+/*
+  Project Analysis SECTION -------------------
+*/
+#project_analysis{
+  background-color: #001815;
+}
+
+#project_analysis h2{
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 3.8rem;
+}
+
+#project_analysis span{
+  -webkit-text-stroke: 2px #499BDF;
+  -webkit-text-fill-color: transparent;
+}
+
+.pj_analysis{
+  display: flex;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.pj_analysis_img{
+  width: 60%;
+}
+
+.pj_analysis_img img{
+  margin-top: 1rem;
+}
+
+.pj_analysis_text{
+  width: 35%;
+  margin-left: 5%;
+}
+
+.pj_analysis_text h4{
+  margin:2rem 0;
+}
+
+.pj_analysis_text2{
+  width: 35%;
+  margin-right: 5%;
+}
+
+.pj_analysis_text2 h4{
+  margin:2rem 0;
+}
+
+
+/* Contact Me Section */
 #contact{
   background-color: #499BDF;
   margin: 0;
@@ -310,6 +317,10 @@ img{
     font-size: 3.5rem;
     margin-right: 15%;
   }
+
+  #project_analysis h2{
+    font-size: 3.5rem;
+  }
 }
 
 @media only screen and (max-width:1080px){
@@ -323,6 +334,10 @@ img{
   #who_am_I h2 {
     font-size: 3.3rem;
     margin-right: 10%;
+  }
+
+  #project_analysis h2{
+    font-size: 3.3rem;
   }
 }
 
@@ -399,6 +414,10 @@ img{
     margin-right: 8%;
   }
 
+  #project_analysis h2{
+    font-size: 3rem;
+  }
+
   .footer h1{
     font-size: 1.5rem;
   }
@@ -437,6 +456,10 @@ img{
   #who_am_I h2 {
     font-size: 2.7rem;
     margin-right: 8%;
+  }
+
+  #project_analysis h2{
+    font-size: 2.7rem;
   }
 
   .pj_analysis_text h4 {
@@ -527,6 +550,10 @@ img{
   #who_am_I h2 {
     font-size: 2rem;
     margin-right: 8%;
+  }
+
+  #project_analysis h2{
+    font-size: 2rem;
   }
 
   .solid_h2{
