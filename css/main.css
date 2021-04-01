@@ -307,20 +307,24 @@ hr {
 
 
 
-
-@media only screen and (max-width:920px){
-  .pdctImg{
-    max-width: 12rem;
-    max-height: 12rem;
+@media only screen and (max-width:1120px){
+  h1{
+    font-size: 3.8rem;
   }
 
 }
 
-
-
-@media only screen and (max-width:770px){
+@media only screen and (max-width:800px){
   a{
     font-size: 12px;
+  }
+
+  p{
+    font-size: 12px;
+  }
+
+  h1{
+    font-size: 3rem;
   }
 
   .top-nav {
@@ -335,61 +339,8 @@ hr {
 
 }
 
-@media only screen and (max-width:620px){
-  a{
-    font-size: 8px;
+@media only screen and (max-width:660px){
+  h1{
+    font-size: 2.5rem;
   }
-
-  .empty70{
-    display: none;
-  }
-
-  .empty80{
-    display: none;
-  }
-
-  .empty50{
-    width: 50%;
-  }
-
-  .empty75{
-    width:75%;
-  }
-
-  .cart_toptag1{
-    width:20%;
-  }
-
-  .cart_toptag2{
-    width:30%;
-  }
-
-  .top-nav {
-    padding: 5px;
-  }
-
-  .cart_item_pic{
-    display: none;
-  }
-
-  .cart_item_info{
-    flex-direction: row;
-    text-align: center;
-    width:50%;
-  }
-
-  .cart_item_amount{
-    width:20%;
-    text-align: center;
-  }
-
-  .price_sum{
-    width:30%;
-    text-align: center;
-  }
-
-  .top{
-    flex-wrap: wrap;
-  }
-
 }
