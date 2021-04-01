@@ -35,6 +35,18 @@ img{
   justify-content: flex-end;
 }
 
+.phone_menu{
+  display: none;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 20px;
+  height: 2px;
+  background-color: rgba(255,255,255,0.9);
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
 .fa {
   font-size: 2rem!important;
   margin-bottom: 2rem;
@@ -214,9 +226,7 @@ img{
   margin-right: 18%;
 }
 
-.empty_h2{
-  margin-top: -12rem;
-}
+
 
 .empty_h2 h2{
   -webkit-text-stroke: 2px #499BDF;
@@ -225,6 +235,7 @@ img{
 
 .solid_h2{
   margin-bottom: 2rem;
+  margin-top: -12rem;
 }
 
 #contact{
@@ -246,6 +257,10 @@ img{
   margin-left: 7%;
   margin-right: 7%;
   margin-bottom: 2rem;
+}
+
+.my_info2{
+  display: none;
 }
 
 .contact_place{
@@ -276,15 +291,22 @@ img{
 /* Responsive Designs */
 @media only screen and (max-width:1255px){
   #who_am_I h2 {
-      font-size: 3.5rem;
-      margin-right: 15%;
+    font-size: 3.5rem;
+    margin-right: 15%;
+  }
+}
+
+@media only screen and (max-width:1080px){
+  .my_info {
+    margin-left: 3%;
+    margin-right: 3%;
   }
 }
 
 @media only screen and (max-width:990px){
   #who_am_I h2 {
-      font-size: 3.3rem;
-      margin-right: 10%;
+    font-size: 3.3rem;
+    margin-right: 10%;
   }
 }
 
@@ -292,6 +314,41 @@ img{
 
   .square_pad{
     width: 35%;
+  }
+
+  .my_info{
+    display: none;
+  }
+
+  .my_info2{
+    display: contents;
+  }
+
+  .my_info_row1>.contact_place{
+    width: 50%;
+  }
+
+  .my_info_row2>.contact_place{
+    width: 50%;
+  }
+
+  .contact_place{
+    justify-content: flex-start;
+  }
+
+  .my_info_row1{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 14%;
+    margin-right: 10%;
+    margin-bottom: 1rem;
+  }
+
+  .my_info_row2{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 14%;
+    margin-right: 10%;
   }
 
 }
@@ -322,8 +379,16 @@ img{
   }
 
   #who_am_I h2 {
-      font-size: 3rem;
-      margin-right: 8%;
+    font-size: 3rem;
+    margin-right: 8%;
+  }
+
+  .footer h1{
+    font-size: 1.5rem;
+  }
+
+  .contact_place h4{
+    font-size: 12px;
   }
 
 }
@@ -338,20 +403,29 @@ img{
     padding-right: 0;
   }
 
+  .software_pad {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10%;
+  }
+
+  .experience_pad {
+    margin-top: -1.2rem;
+  }
+
   .software_list{
-   width: 95%;
+    width: 95%;
   }
 
   #who_am_I h2 {
-      font-size: 3rem;
-      margin-right: 8%;
+    font-size: 2.7rem;
+    margin-right: 8%;
   }
 
 }
 
 @media only screen and (max-width:660px){
-
-
 
   .square_pad{
     width: 50%;
@@ -375,6 +449,40 @@ img{
 
 }
 
-@media only screen and (max-width:600px){
+@media only screen and (max-width:540px){
+
+  .top_nav_left{
+    padding-left: 1rem;
+  }
+
+  .top_nav_right{
+    display: none;
+  }
+
+  .phone_menu{
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 3%;
+    align-self: center;
+    padding: 1rem;
+  }
+
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-5px, 4px);
+    transform: rotate(-45deg) translate(-5px, 4px);
+  }
+
+  .change .bar2 {
+    opacity: 0;
+  }
+
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-5px, -5px);
+    transform: rotate(45deg) translate(-5px, -5px);
+  }
+
+  .phone_menu i{
+    margin: 0;
+  }
 
 }
