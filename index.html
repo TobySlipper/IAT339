@@ -33,17 +33,45 @@
       </nav>
 
 
-      <div class="phone_menu" onclick="myFunction(this)">
+      <div class="phone_menu" onclick="myFunction(this);openNav()">
         <!-- <i class="fa fa-bars" style="color:rgba(255,255,255,0.9);"></i> //-->
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
       </div>
 
+      <!-- The overlay -->
+      <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <!-- Overlay content -->
+        <div class="overlay-content">
+          <a href="#who_am_I" class="main_nav">Who am I</a>
+          <a href="#project_analysis" class="main_nav">Work Gallery</a>
+          <a href="#contact" class="main_nav">Contact Me</a>
+        </div>
+
+      </div>
+
+
 
       <script>
         function myFunction(x) {
           x.classList.toggle("change");
+        }
+      </script>
+
+      <script>
+        /* Open when someone clicks on the span element */
+        function openNav() {
+          document.getElementById("myNav").style.width = "100%";
+        }
+
+        /* Close when someone clicks on the "x" symbol inside the overlay */
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
         }
       </script>
 
