@@ -66,6 +66,10 @@ img{
   margin-top: -1rem;
 }
 
+.info_pads2{
+  display: none;
+}
+
 .square_pad{
   width: 30%;
   background-color: rgba(255,255,255,0.2);
@@ -182,6 +186,10 @@ img{
   margin-left: 5%;
 }
 
+.software_list p{
+  text-align: left;
+}
+
 .software_pad{
   width: 50%;
   background-color: none;
@@ -263,6 +271,10 @@ img{
   display: none;
 }
 
+.my_info3{
+  display: none;
+}
+
 .contact_place{
   display: flex;
   justify-content: center;
@@ -281,6 +293,10 @@ img{
   max-width: 40px;
   max-height: 40px;
   vertical-align: middle;
+}
+
+.copyright{
+  margin: 0 5%;
 }
 
 .copyright p{
@@ -423,6 +439,10 @@ img{
     margin-right: 8%;
   }
 
+  .pj_analysis_text h4 {
+    font-size: 14px;
+  }
+
 }
 
 @media only screen and (max-width:660px){
@@ -445,6 +465,10 @@ img{
 
   .fa {
     font-size: 1.2rem!important;
+  }
+
+  .pj_analysis_text h4 {
+    margin: 1rem 0;
   }
 
 }
@@ -481,8 +505,109 @@ img{
     transform: rotate(45deg) translate(-5px, -5px);
   }
 
-  .phone_menu i{
-    margin: 0;
+  .fa_icons{
+    width: 60%;
+    margin-left: 20%;
   }
 
+  .pj_analysis_text h4 {
+    font-size: 12px;
+  }
+
+  .contact_place img {
+    max-width: 30px;
+    max-height: 30px;
+    vertical-align: middle;
+  }
+
+}
+
+@media only screen and (max-width:500px){
+
+  #who_am_I h2 {
+    font-size: 2rem;
+    margin-right: 8%;
+  }
+
+  .solid_h2{
+    margin-bottom: 4.5rem;
+  }
+
+  .my_info2{
+    display: none;
+  }
+
+  .my_info3{
+    display: contents;
+  }
+
+  .my_info3>.contact_place{
+    margin-left: 25%;
+    width: 50%;
+    margin-bottom: 0.5rem;
+  }
+
+  .contact_place h4{
+    margin-left: 1.5rem;
+  }
+}
+
+@media only screen and (max-width:470px){
+  .info_pads{
+    display: none;
+  }
+
+  .info_pads2{
+    display: contents;
+  }
+
+  .info_pads2>.solid_h2{
+    margin-top: -1rem;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  #who_am_I h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .info_pads2>.experience_pad{
+    width: 74%;
+    margin-left: 13%;
+    margin-top: -1rem;
+  }
+
+  .softwares>.software_list{
+    width: 90%;
+    margin-left: 10%;
+  }
+
+  .int_positions>.software_list{
+    width: 72%;
+    margin-left: 14%;
+  }
+}
+
+@media only screen and (max-width:406px){
+  .square_pad{
+    width: 60%;
+    margin-left: 20%;
+  }
+
+  #homepage h1 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width:325px){
+  .square_pad{
+    width: 70%;
+    margin-left: 15%;
+  }
+
+  #homepage h1 {
+    font-size: 1.8rem;
+  }
 }
