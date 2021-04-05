@@ -581,6 +581,11 @@ img{
     margin-bottom: 0;
   }
 
+  .square_pad{
+    width: 60%;
+    margin-left: 20%;
+  }
+
   #who_am_I h2 {
     font-size: 2rem;
     text-align: center;
@@ -604,16 +609,6 @@ img{
   }
 }
 
-@media only screen and (max-width:406px){
-  .square_pad{
-    width: 60%;
-    margin-left: 20%;
-  }
-
-  #homepage h1 {
-    font-size: 2rem;
-  }
-}
 
 @media only screen and (max-width:325px){
   .square_pad{
