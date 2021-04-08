@@ -576,7 +576,7 @@ img{
   }
 
   .info_pads2>.solid_h2{
-    margin-top: -1rem;
+    margin-top: 1rem;
     margin-left: 0;
     margin-bottom: 0;
   }
@@ -593,9 +593,9 @@ img{
   }
 
   .info_pads2>.experience_pad{
-    width: 74%;
-    margin-left: 13%;
-    margin-top: -1rem;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 1rem;
   }
 
   .softwares>.software_list{
