@@ -152,7 +152,7 @@ img{
   background-color: none;
   border: 2px solid rgba(255,255,255,0.9);
   margin-left: 40%;
-  margin-top: 10%;
+  margin-top: 15%;
 }
 
 .software_pad h4{
@@ -197,8 +197,19 @@ img{
 }
 
 .solid_h2{
-  margin-bottom: 5rem;
+  margin-bottom: 15%;
   margin-top: -12rem;
+  animation: slidein 1.5s ease-in-out 0.5s 1 alternate;
+}
+
+@keyframes slidein {
+  0% {
+    transform: translate(40%, 0);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
 }
 
 /*
@@ -222,7 +233,7 @@ img{
 .pj_analysis{
   display: flex;
   margin-bottom: 2rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
   justify-content: space-between;
 }
 
