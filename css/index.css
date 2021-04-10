@@ -75,6 +75,17 @@ img{
   background-color: rgba(255,255,255,0.2);
   margin-left: 55%;
   margin-top: 10%;
+  animation: zoom 3s ease-in-out infinite alternate;
+}
+
+@keyframes zoom {
+  0% 100%{
+    transform: scale(1);
+  }
+
+  50%{
+    transform: scale(1.03);
+  }
 }
 
 .square_pad_text{
@@ -228,6 +239,14 @@ img{
 #project_analysis span{
   -webkit-text-stroke: 2px #499BDF;
   -webkit-text-fill-color: transparent;
+}
+
+.hp_pj_img{
+  transition: transform .3s;
+}
+
+.hp_pj_img:hover{
+  transform: scale(1.03);
 }
 
 .pj_analysis{
