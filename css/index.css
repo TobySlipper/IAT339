@@ -69,7 +69,7 @@ img{
   color: white;
   text-align: center;
   margin-top: -1rem;
-  animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
+  animation: reveal 3s ease-in-out forwards 0.2s, glow 2.5s linear infinite 2s;
 }
 
 #homepage h1:hover{
@@ -87,7 +87,7 @@ img{
 
 @keyframes glow {
   40% {
-    text-shadow: 0 0 0.4rem #fff;
+    text-shadow: 0 0 0.5rem #499BDF;
   }
 }
 
@@ -235,17 +235,6 @@ img{
 .solid_h2{
   margin-bottom: 15%;
   margin-top: -12rem;
-  animation: slidein 1.5s ease-in-out 0.5s 1 alternate;
-}
-
-@keyframes slidein {
-  0% {
-    transform: translate(40%, 0);
-  }
-
-  100% {
-    transform: translate(0, 0);
-  }
 }
 
 /*
