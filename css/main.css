@@ -66,7 +66,7 @@ h6 {
 }
 
 img {
-  border: 1px solid white;
+  border: none;
   max-width: 100%;
 }
 
@@ -210,43 +210,8 @@ hr {
   transition: 0.81s;
 }
 
-.img1{
-  width: 100%;
-  height: auto;
-}
-
-.picHover1{
-  position: relative;
-  width: 50%;
-}
-
-.overlay1 {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: auto;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: white;
-}
-
-.text1 {
-  color: black;
-  font-size: 2rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.picHover1:hover .overlay1{
-  opacity: 0.6;
+.pj_analysis_p{
+  width: 48%;
 }
 
 .copyright a{
@@ -274,38 +239,49 @@ hr {
 }
 
 /*
-  Project Analysis SECTION -------------------
+  combined elements SECTION -------------------
 */
-
-.pj_analysis{
-  display: flex;
-  margin-bottom: 2rem;
-}
-
-.pj_analysis_img{
-  width: 60%;
-}
-
-.pj_analysis_img img{
+.square_pad_sg{
+  width: 30%;
+  background-color: rgba(255,255,255,0.2);
   margin-top: 1rem;
+  animation: zoom 3s ease-in-out infinite alternate;
 }
 
-.pj_analysis_text{
+@keyframes zoom {
+  0% 100%{
+    transform: scale(1);
+  }
+
+  50%{
+    transform: scale(1.03);
+  }
+}
+
+.square_pad_text_sg{
+  color: white;
+  padding: 3rem;
+}
+
+.experience_pad_sg{
   width: 35%;
-  margin-left: 5%;
+  margin-top: 1rem;
+  border: 2px solid pink;
 }
 
-.pj_analysis_text h4{
-  margin:2rem 0;
+.job_title_sg img{
+  max-width: 32px;
 }
 
-.pj_analysis_text2{
-  width: 35%;
-  margin-right: 5%;
+.int_positions_sg{
+  padding: 2rem;
 }
 
-.pj_analysis_text2 h4{
-  margin:2rem 0;
+.int_positions_sg h4{
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #499BDF;
 }
 
 

@@ -8,6 +8,7 @@
   <title>Portfolio Styleguide</title>
 
   <link href="css/main.css" rel="stylesheet">
+  <link href="css/aos.css" rel="stylesheet">
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
@@ -15,6 +16,11 @@
 </head>
 
 <body>
+
+  <script src="JS/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
   <header>
     <h1>P03 Portforlio Styleguide Page</h1>
@@ -41,9 +47,6 @@
     <section class="element">
       <h3>In-text link</h3>
 
-      <h4>CSS selector:</h4>
-      <p>a</p>
-
       <h4>Sample code:</h4>
       <pre class="code_block">
         <code>
@@ -61,9 +64,6 @@
     <section class="element">
 
       <h3>Navigation Link</h3>
-
-      <h4>CSS selector:</h4>
-      <p>.button-nav</p>
 
       <h4>Sample code:</h4>
 
@@ -108,9 +108,6 @@
     <section class="element">
       <h3>Text Input Field with Label</h3>
 
-      <h4>CSS selector:</h4>
-      <p>.label-inputLabel</p>
-
       <h4>Sample code:</h4>
       <code>&lt;label&gt;Leave Your Email: &lt;/lable&gt; &lt;input type="text" value=""/&gt;</code>
 
@@ -122,9 +119,6 @@
 
     <section class="element">
       <h3>Radio Button with Label</h3>
-
-      <h4>CSS selector:</h4>
-      <p>.label</p>
 
       <h4>Sample code:</h4>
       <pre class="code_block">
@@ -146,11 +140,24 @@
     <!-- An image as a link// -->
     <section class="element">
       <h3>Image as a Link</h3>
-      <div class="picHover1">
-        <a href="https://www.instagram.com/onecakeboutique/"><img alt="An image of an orchid" src="img/styleguide_pic1.jpeg" class="img1"></a>
-        <div class="overlay1">
-          <div class="text1"><a href="https://github.com/TobySlipper">Learn More</a></div>
-        </div>
+
+      <h4>Sample code:</h4>
+
+      <pre class="code_block">
+        <code>
+          &lt;h1&gt;This is Heading 1&lt;/h1&gt;
+          &lt;h2&gt;This is Heading 2&lt;/h2&gt;
+          &lt;h3&gt;This is Heading 3&lt;/h3&gt;
+          &lt;h4&gt;This is Heading 4&lt;/h4&gt;
+
+          &lt;div class="pj_analysis_p"&gt;
+            &lt;a href="p2.html"&gt;&lt;img src="img/pj03.png" class="hp_pj_img" alt="Project 2."&gt;&lt;/a&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+
+      <div class="pj_analysis_p">
+        <a href="p2.html"><img src="img/pj03.png" class="hp_pj_img" alt="Project 2."></a>
       </div>
     </section>
 
@@ -210,9 +217,6 @@
     <section class="element">
       <h3>Numbered Lists</h3>
 
-      <h4>CSS selector:</h4>
-      <p>.ol-products</p>
-
       <h4>Sample code:</h4>
       <pre class="code_block">
         <code>
@@ -245,25 +249,115 @@
     <section class="element">
       <h3>Main Navigation</h3>
 
-      <h4>CSS selector:</h4>
-      <p>.main_nav</p>
-
       <h4>Sample code:</h4>
       <pre class="code_block">
         <code>
-          &lt;a class="button" href="#" &gt;Homepage&lt;/a&gt;
-          &lt;a class="button" href="#" &gt;Cake&lt;/a&gt;
-          &lt;a class="button" href="#" &gt;Drink & More&lt;/a&gt;
-          &lt;a class="button" href="#" &gt;About Us&lt;/a&gt;
+          &lt;a href="#" class="main_nav"&gt;Who Am I&lt;/a&gt;
+          &lt;a href="#" class="main_nav"&gt;Work Gallery&lt;/a&gt;
+          &lt;a href="#" class="main_nav"&gt;Contact&lt;/a&gt;
         </code>
       </pre>
 
 
       <h4>Rendered element:</h4>
-      <a class="main_nav" href="#">Homepage</a>
-      <a class="main_nav" href="#">Cake</a>
-      <a class="main_nav" href="#">Drink & More</a>
-      <a class="main_nav" href="#">About Us</a>
+      <a href="#" class="main_nav">Who Am I</a>
+      <a href="#" class="main_nav">Work Gallery</a>
+      <a href="#" class="main_nav">Contact</a>
+    </section>
+
+    <section class="element">
+      <h3>Homepage Bio</h3>
+
+      <h4>Sample code:</h4>
+      <pre class="code_block">
+        <code>
+          &lt;div class="square_pad"&gt;
+            &lt;div class="square_pad_text"&gt;
+              &lt;p&gt;I am Yingdong He, you can just call me Toby. With the passion and curiosity of styling the beauty of the world
+              as I like, I started my journey in the space of design: associate with human, and associate with life. I value both
+              contents and apperances, as well as rules and freedom. I believe the aesthetics of design have the power of challenging
+              how we see the world.&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+
+
+      <h4>Rendered element:</h4>
+      <div class="square_pad_sg">
+        <div class="square_pad_text_sg">
+          <p>I am Yingdong He, you can just call me Toby. With the passion and curiosity of styling the beauty of the world
+          as I like, I started my journey in the space of design: associate with human, and associate with life. I value both
+          contents and apperances, as well as rules and freedom. I believe the aesthetics of design have the power of challenging
+          how we see the world.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="element">
+      <h3>My Skills / Job Interest section</h3>
+
+      <h4>Sample code:</h4>
+      <pre class="code_block">
+        <code>
+          &lt;div class="experience_pad" data-aos="flip-up" data-aos-duration="1200"&gt;
+
+            &lt;div class="int_positions"&gt;
+
+              &lt;h4>Positions I interested in:&lt;/h4&gt;
+
+              &lt;div class="software_list"&gt;
+                &lt;div class="job_title"&gt;
+                  &lt;img src="img/designer.png"&gt;
+                  &lt;p&gt;Game Designer&lt;/p&gt;
+                &lt;/div&gt;
+
+                &lt;div class="job_title"&gt;
+                  &lt;p&gt;Graphics Designer&lt;/p&gt;
+                &lt;/div&gt;
+
+                &lt;div class="job_title"&gt;
+                  &lt;p&gt;UI Designer&lt;/p&gt;
+                &lt;/div&gt;
+
+                &lt;div class="job_title"&gt;
+                  &lt;p&gt;UX Designer&lt;/p&gt;
+                &lt;/div&gt;
+
+              &lt;/div&gt;
+
+            &lt;/div&gt;
+
+          &lt;/div&gt;
+        </code>
+      </pre>
+
+
+      <h4>Rendered element:</h4>
+      <div class="experience_pad_sg" data-aos="flip-up" data-aos-duration="1200">
+
+        <div class="int_positions_sg">
+
+          <h4>Positions I interested in:</h4>
+
+          <div class="software_list_sg">
+            <div class="job_title_sg">
+              <img src="img/designer.png">
+              <p>Game Designer</p>
+            </div>
+            <div class="job_title_sg">
+              <p>Graphics Designer</p>
+            </div>
+            <div class="job_title_sg">
+              <p>UI Designer</p>
+            </div>
+            <div class="job_title_sg">
+              <p>UX Designer</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </section>
 
     <section class="element">
@@ -275,89 +369,14 @@
 
   </section>
 
-  <!-- Project Analysis SECTION // -->
-  <section id="project_analysis">
-    <h2>Project Analysis</h2>
-
-    <section class="element">
-
-      <div class="pj_analysis">
-        <div class="pj_analysis_img">
-          <img src="img/pj01.png" alt="Project 01 Image 1.">
-          <img src="img/pj02.png" alt="Project 01 Image 2.">
-        </div>
-
-        <div class="pj_analysis_text">
-          <h4> Project: IAT339 Company Website Design</h4>
-          <p>This is a project required to design a website for a fictional company we established, "H.T Cake".
-            As a food service business, the design of its website tests some really important considerations of
-            daily element implications, which means, except the aesthetics for the layout, the functions are the
-            bigger parts where the experiences of the users are mainly relying on. In this case, a good design should
-            not only satisfy users' comforts: is the color harmonic, is the size of image suitable, etc., but also
-            guarantee the convenience of achieving the main goals, which on this website, to browse the products
-            and learn about the information, and very potentially the further steps in making the orders.
-          </p>
-
-          <p>From my perspective, I am satisfied what we (this project is done with a partner) have created out.
-            The tests for usability were qualified as the most common functions needed in the website of a food
-            company are all achieved, such as a clear listed product menu, a informative product detail page, a clear
-            shopping cart and payment page that is easy to follow. And for the design aesthetics, the layout of
-            the elements across each page are consistent, the color selections are harmonic and suitable for the
-            theme of the company, the responsive designs also look great, although I feel some of the components
-            or images are too sharp to be there which requires some finer polish. In general, I feel this project
-            successfully improved my knowledge on how to design for the demands and needs of the users rather than
-            making arbitrary decisions.
-          </p>
-
-        </div>
-      </div>
-
-      <div class="pj_analysis">
-
-        <div class="pj_analysis_text2">
-          <h4> Project: IAT235 Information Website Design</h4>
-          <p>This is a project required to design a information website for a fictional moutain safety and rescue team.
-            As a non-profit association, this website mainly accounts for popularizing the safety guidelines and rescue
-            knowledge about two topics: Avalanche and Hypothemia, as well as intorudcing the team itself. In this case,
-            the design focus is to accurately express the correct guideline information to the users while the layout of
-            the website maintains the aesthetics level, and the former should be the most important part.
-          </p>
-
-          <p>From my perspective, I am satisfied what we (this project is done with two partners) have created out.
-            IAT 235 was the first time that I attaced website designing. At that stage I was researching and doing some
-            pratical designs in order to try my best to make the website look professional. Basically the page layouts
-            are the same for the pages which account for same purposes. The color scheme for the website were also selected
-            to fit the topics well. The usability tests were not bad as most of the functions worked well. The information
-            sections combined both text and visualize elements to create comfort reading experiences for users. What I feel
-            not perfect is the sizes of the elements. As this is the first approach, some of the size decisions seemed to be
-            inappropriate as they may look too big on screens. The compositions of some of the elements can also have some
-            improvements. But overall I think in this project we successfully expressed the information as planned and the
-            whole website looks good in terms of color harmonic and theme relevance. I have gained some knowledge about informative
-            designs and have learned many basic rules in website development.
-          </p>
-
-        </div>
-
-        <div class="pj_analysis_img">
-          <img src="img/pj03.png" alt="Project 02 Image 1.">
-          <img src="img/pj04.png" alt="Project 02 Image 2.">
-        </div>
-
-      </div>
-
-
-
-    </section>
-
-  </section>
-
 
 
   <section id="citations">
     <h2>Citations</h2>
 
     <ul>
-      <li>Adams, Vernon. Designer. 2011. <strong>Mulish [Font]</strong>. Retrieved from <a href="https://fonts.google.com/specimen/Mulish?sidebar.open=true&selection.family=Mulish:wght@300#standard-styles">https://fonts.google.com/specimen/Mulish?sidebar.open=true&selection.family=Mulish:wght@300#standard-styles</a></li>
+      <li>Adams, Vernon. 2011. <strong>Mulish [Font]</strong>. Retrieved from <a href="https://fonts.google.com/specimen/Mulish?sidebar.open=true&selection.family=Mulish:wght@300#standard-styles">https://fonts.google.com/specimen/Mulish?sidebar.open=true&selection.family=Mulish:wght@300#standard-styles</a></li>
+      <li>Sajnóg, Michał. 2015. <strong>AOS-Animate On Scroll Library [Library]</strong>. Retrieved from <a href="https://michalsnik.github.io/aos/">https://michalsnik.github.io/aos/</a></li>
     </ul>
 
   </section>
