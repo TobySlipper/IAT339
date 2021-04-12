@@ -89,10 +89,67 @@ img{
   width: 48%;
 }
 
+.pj_img_div1{
+  transition: transform 1s;
+  animation: slide1 2s ease-in-out 1 alternate;
+}
+
+@keyframes slide1 {
+  0% {
+    transform: translate(-70%, 0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0, 0);
+    opacity: 100%;
+  }
+}
+
+.pj_img_div1:hover{
+  transform: scale(1.8) translate(30%, 0);
+  transition-delay: 0.7s;
+}
+
+.pj_img_div2{
+  transition: transform 1s;
+  animation: slide2 2s ease-in-out 1 alternate;
+}
+
+@keyframes slide2 {
+  0% {
+    transform: translate(70%, 0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0, 0);
+    opacity: 100%;
+  }
+}
+
+.pj_img_div2:hover{
+  transform: scale(1.8) translate(-30%, 0);
+  transition-delay: 0.7s;
+}
+
 .pj_analysis_text{
   width: 100%;
   margin-left: 0;
   margin-top: 4rem;
+  animation: moveup 1.5s ease-in-out 1 alternate;
+}
+
+@keyframes moveup {
+  0% {
+    transform: translate(0, 50%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0, 0);
+    opacity: 100%;
+  }
 }
 
 .pj_analysis_text h4{
@@ -112,6 +169,7 @@ img{
 .pj_analysis_text span{
   -webkit-text-fill-color: #499BDF;
 }
+
 
 
 /* Contact Me Section */
@@ -296,6 +354,14 @@ img{
 
   .pj_analysis_text h4 {
     margin: 1rem 0;
+  }
+
+  .pj_img_div1:hover{
+    transform: none;
+  }
+
+  .pj_img_div2:hover{
+    transform: none;
   }
 
 }
