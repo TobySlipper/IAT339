@@ -1,7 +1,7 @@
 
 body{
   margin: 0!important;
-  background-color: #001815;
+  background-color: var(--bg);
 }
 
 img{
@@ -42,7 +42,7 @@ img{
 .bar1, .bar2, .bar3 {
   width: 20px;
   height: 2px;
-  background-color: rgba(255,255,255,0.9);
+  background-color: var(--heading);
   margin: 5px 0;
   transition: 0.4s;
 }
@@ -87,7 +87,7 @@ img{
 
 @keyframes glow {
   40% {
-    text-shadow: 0 0 0.5rem #499BDF;
+    text-shadow: 0 0 0.5rem var(--blue);
   }
 }
 
@@ -97,7 +97,7 @@ img{
 
 .square_pad{
   width: 30%;
-  background-color: rgba(255,255,255,0.2);
+  background-color: var(--hover);
   margin-left: 55%;
   margin-top: 10%;
   animation: zoom 3s ease-in-out infinite alternate;
@@ -147,7 +147,7 @@ img{
 
 .pic_note{
   width: 10%;
-  background-color: rgba(255,255,255,0.2);
+  background-color: var(--hover);
   text-align: right;
 }
 
@@ -186,7 +186,7 @@ img{
 .software_pad{
   width: 50%;
   background-color: none;
-  border: 2px solid rgba(255,255,255,0.9);
+  border: 2px solid var(--heading);
   margin-left: 40%;
   margin-top: 15%;
 }
@@ -194,7 +194,7 @@ img{
 .software_pad h4{
   margin-top: 2rem;
   text-align: center;
-  color: #499BDF;
+  color: var(--blue);
 }
 
 .job_title img{
@@ -216,7 +216,7 @@ img{
   margin-top: 0;
   margin-bottom: 2rem;
   text-align: center;
-  color: #499BDF;
+  color: var(--blue);
 }
 
 #who_am_I h2{
@@ -228,7 +228,7 @@ img{
 }
 
 .empty_h2 h2{
-  -webkit-text-stroke: 2px #499BDF;
+  -webkit-text-stroke: 2px var(--blue);
   -webkit-text-fill-color: transparent;
 }
 
@@ -241,7 +241,7 @@ img{
   Project Analysis SECTION -------------------
 */
 #project_analysis{
-  background-color: #001815;
+  background-color: var(--bg);
 }
 
 #project_analysis h2{
@@ -251,7 +251,7 @@ img{
 }
 
 #project_analysis span{
-  -webkit-text-stroke: 2px #499BDF;
+  -webkit-text-stroke: 2px var(--blue);
   -webkit-text-fill-color: transparent;
 }
 
@@ -277,7 +277,7 @@ img{
 
 /* Contact Me Section */
 #contact{
-  background-color: #499BDF;
+  background-color: var(--blue);
   margin: 0;
 }
 
