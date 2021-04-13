@@ -1,7 +1,7 @@
 
 body{
   margin: 0!important;
-  background-color: #001815;
+  background-color: var(--bg);
 }
 
 img{
@@ -32,7 +32,7 @@ img{
 .bar1, .bar2, .bar3 {
   width: 20px;
   height: 2px;
-  background-color: rgba(255,255,255,0.9);
+  background-color: var(--heading);
   margin: 5px 0;
   transition: 0.4s;
 }
@@ -58,7 +58,7 @@ img{
   Project Analysis SECTION -------------------
 */
 #project_analysis{
-  background-color: #001815;
+  background-color: var(--bg);
 }
 
 #project_analysis h2{
@@ -68,7 +68,7 @@ img{
 }
 
 .pj_h2 span{
-  -webkit-text-stroke: 2px #499BDF;
+  -webkit-text-stroke: 2px var(--blue);
   -webkit-text-fill-color: transparent;
 }
 
@@ -154,7 +154,7 @@ img{
 
 .pj_analysis_text h4{
   margin:2rem 0;
-  color: #499BDF;
+  color: var(--blue);
 }
 
 .pj_analysis_text2{
@@ -167,14 +167,14 @@ img{
 }
 
 .pj_analysis_text span{
-  -webkit-text-fill-color: #499BDF;
+  -webkit-text-fill-color: var(--blue);
 }
 
 
 
 /* Contact Me Section */
 #contact{
-  background-color: #499BDF;
+  background-color: var(--blue);
   margin: 0;
 }
 
