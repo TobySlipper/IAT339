@@ -2,9 +2,17 @@
   STYLE GUIDE STYLING
   Default styling for the style guide
 */
+:root {
+  --bg: #001815;
+  --blue: #499BDF;
+  --heading: rgba(255,255,255,0.9);
+  --hover: rgba(255,255,255,0.2);
+}
+
 body {
   font-family: 'Mulish', sans-serif;
-  background-color: #001815;
+  background-color: var(--bg);
+  margin: 0!important;
 }
 
 * {
@@ -20,7 +28,7 @@ section{
   padding-bottom: 2rem;
   border-top-width: 0.15rem;
   border-top-style: dotted;
-  border-top-color: #499BDF;
+  border-top-color: var(--blue);
 }
 
 a {
@@ -30,7 +38,7 @@ a {
 
 h1 {
   font-size: 5rem;
-  color: rgba(255,255,255,0.9);
+  color: var(--heading);
   padding-bottom: 1rem;
   text-align: center;
   /* -webkit-text-stroke: 0.1px #499BDF; */
@@ -39,19 +47,19 @@ h1 {
 h2 {
   margin-top: 5rem;
   font-size: 2rem;
-  color: #499BDF;
+  color: var(--blue);
 }
 
 
 h3 {
   font-style: italic;
   margin-top: 1rem;
-  color: rgba(255,255,255,0.9);
+  color: var(--heading);
 }
 
 h4 {
   margin-bottom: 0.2rem;
-  color: rgba(255,255,255,0.9);
+  color: var(--heading);
 }
 
 h5 {
@@ -66,7 +74,7 @@ h6 {
 }
 
 img {
-  border: 1px solid white;
+  border: none;
   max-width: 100%;
 }
 
@@ -74,7 +82,7 @@ p {
   font-size: 1rem;
   margin-top: 0;
   text-align: justify;
-  color: rgba(255,255,255,0.9);
+  color: var(--heading);
 }
 
 li {
@@ -83,7 +91,7 @@ li {
 }
 
 nav a:hover, nav a:focus {
-  color: rgba(255,255,255,0.2);
+  color: var(--hover);
   transition: 0.81s;
 }
 
@@ -92,8 +100,9 @@ input:hover, input:focus{
 }
 
 button:hover{
-  color: rgba(255,255,255,0.2);
-  transition: 0.81s;
+  color: var(--blue);
+  border-color: var(--blue);
+  transition: 0.7s;
 }
 
 button:focus{
@@ -101,7 +110,7 @@ button:focus{
 }
 
 button{
-  color: #E7A93D;
+  color: var(--heading);
   background-color: transparent;
   padding: 0.5rem;
   text-decoration: none;
@@ -113,7 +122,7 @@ button{
 
   border-width: 2px;
   border-style: solid;
-  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-color: var(--heading);
 }
 
 input[type=text] {
@@ -143,7 +152,7 @@ hr {
   padding: 1.2rem 2rem;
   padding-bottom: 0;
   margin-top: 2rem;
-  color: #fff;
+  color: var(--heading);
   max-height: 20rem;
   overflow: scroll;
 }
@@ -160,7 +169,7 @@ hr {
 }
 
 .main_nav:hover{
-  color: rgba(255,255,255,0.2);
+  color: var(--hover);
   transition: 0.81s;
 }
 
@@ -182,7 +191,7 @@ hr {
 }
 
 .top-nav {
-  color: #E7A93D;
+  color: var(--blue);
   background-color: none;
   padding: 0.8rem;
   text-decoration: none;
@@ -197,8 +206,38 @@ hr {
 }
 
 .top-nav:hover{
-  color: rgba(255,255,255,0.2);
+  color: var(--hover);
   transition: 0.81s;
+}
+
+.phone_menu{
+  display: none;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 20px;
+  height: 2px;
+  background-color: var(--heading);
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+.fa_icons{
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+  margin-left: 30%;
+  align-self: center;
+}
+
+.fa {
+  font-size: 2rem!important;
+  margin-bottom: 2rem;
+  transition: transform .2s;
+}
+
+.fa:hover{
+  transform: scale(1.4);
 }
 
 .intext-link{
@@ -206,49 +245,17 @@ hr {
 }
 
 .intext-link:hover{
-  color: rgba(255,255,255,0.2);
+  color: var(--hover);
   transition: 0.81s;
 }
 
-.img1{
-  width: 100%;
-  height: auto;
+.pj_analysis_p{
+  width: 48%;
 }
 
-.picHover1{
-  position: relative;
-  width: 50%;
+.copyright a{
+  text-decoration: underline;
 }
-
-.overlay1 {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: auto;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: white;
-}
-
-.text1 {
-  color: black;
-  font-size: 2rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.picHover1:hover .overlay1{
-  opacity: 0.6;
-}
-
 
 /*
   TEXT ELEMENTS -------------------
@@ -271,38 +278,107 @@ hr {
 }
 
 /*
-  Project Analysis SECTION -------------------
+  combined elements SECTION -------------------
 */
+.square_pad_sg{
+  width: 30%;
+  background-color: var(--hover);
+  margin-top: 1rem;
+  animation: zoom 3s ease-in-out infinite alternate;
+}
 
-.pj_analysis{
+@keyframes zoom {
+  0% 100%{
+    transform: scale(1);
+  }
+
+  50%{
+    transform: scale(1.03);
+  }
+}
+
+.square_pad_text_sg{
+  color: white;
+  padding: 3rem;
+}
+
+.experience_pad_sg{
+  width: 35%;
+  margin-top: 1rem;
+  border: 2px solid pink;
+}
+
+.job_title_sg img{
+  max-width: 32px;
+}
+
+.int_positions_sg{
+  padding: 2rem;
+}
+
+.int_positions_sg h4{
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--blue);
+}
+
+/* Contact Me Section */
+#contact{
+  background-color: var(--blue);
+  margin: 0;
+}
+
+.footer h1{
+  font-size: 2rem;
+}
+
+.footer{
+  padding-top: 1rem;
+}
+
+.my_info{
   display: flex;
+  justify-content: space-evenly;
+  margin-left: 7%;
+  margin-right: 7%;
   margin-bottom: 2rem;
 }
 
-.pj_analysis_img{
-  width: 60%;
+.my_info2{
+  display: none;
 }
 
-.pj_analysis_img img{
-  margin-top: 1rem;
+.my_info3{
+  display: none;
 }
 
-.pj_analysis_text{
-  width: 35%;
-  margin-left: 5%;
+.contact_place{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
 }
 
-.pj_analysis_text h4{
-  margin:2rem 0;
+
+.contact_place h4{
+  margin-left: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-.pj_analysis_text2{
-  width: 35%;
-  margin-right: 5%;
+.contact_place img{
+  max-width: 40px;
+  max-height: 40px;
+  vertical-align: middle;
 }
 
-.pj_analysis_text2 h4{
-  margin:2rem 0;
+.copyright{
+  margin: 0 5%;
+}
+
+.copyright p{
+  text-align: center;
 }
 
 
@@ -316,12 +392,9 @@ hr {
 
 @media only screen and (max-width:800px){
   a{
-    font-size: 12px;
+    font-size: 0.875rem;
   }
 
-  p{
-    font-size: 12px;
-  }
 
   h1{
     font-size: 3rem;
