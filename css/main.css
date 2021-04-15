@@ -192,7 +192,7 @@ hr {
 
 .top-nav {
   color: var(--blue);
-  background-color: none;
+  background-color: transparent;
   padding: 0.8rem;
   text-decoration: none;
   transition-property: background-color;
@@ -288,7 +288,7 @@ hr {
 }
 
 @keyframes zoom {
-  0% 100%{
+  0%, 100%{
     transform: scale(1);
   }
 
