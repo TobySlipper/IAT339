@@ -192,7 +192,7 @@ hr {
 
 .top-nav {
   color: var(--blue);
-  background-color: none;
+  background-color: transparent;
   padding: 0.8rem;
   text-decoration: none;
   transition-property: background-color;
@@ -288,7 +288,7 @@ hr {
 }
 
 @keyframes zoom {
-  0% 100%{
+  0%, 100%{
     transform: scale(1);
   }
 
@@ -381,6 +381,9 @@ hr {
   text-align: center;
 }
 
+#citations{
+  margin-bottom: 3rem;
+}
 
 
 @media only screen and (max-width:1120px){
@@ -388,6 +391,13 @@ hr {
     font-size: 3.8rem;
   }
 
+}
+
+@media only screen and (max-width:935px){
+
+  .square_pad_sg{
+    width: 35%;
+  }
 }
 
 @media only screen and (max-width:800px){
@@ -409,11 +419,73 @@ hr {
     max-height: 10rem;
   }
 
+  .square_pad_text_sg{
+    padding: 2rem;
+  }
+
+  .experience_pad_sg {
+    width: 40%;
+    margin-left: 8%;
+    margin-top: -1.5rem;
+    border: 2px solid pink;
+  }
+
 
 }
+
+@media only screen and (max-width:760px){
+  .experience_pad_sg {
+    margin-top: -1.2rem;
+  }
+
+  .software_list_sg{
+    width: 95%;
+  }
+}
+
+
 
 @media only screen and (max-width:660px){
   h1{
     font-size: 2.5rem;
   }
+
+  .square_pad_sg{
+    width: 50%;
+    margin-left: 25%;
+  }
+}
+
+@media only screen and (max-width:470px){
+  .square_pad_sg{
+    width: 60%;
+    margin-left: 20%;
+  }
+
+
+  .experience_pad_sg{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 1rem;
+  }
+
+  .int_positions_sg>.software_list_sg{
+    width: 72%;
+    margin-left: 14%;
+  }
+}
+
+@media only screen and (max-width:370px){
+  .square_pad_sg{
+    width: 80%;
+    margin-left: 10%;
+  }
+}
+
+@media only screen and (max-width:325px){
+  .square_pad_sg{
+    width: 70%;
+    margin-left: 15%;
+  }
+
 }

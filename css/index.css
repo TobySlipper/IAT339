@@ -64,7 +64,7 @@
 }
 
 @keyframes zoom {
-  0% 100%{
+  0%, 100%{
     transform: scale(1);
   }
 
@@ -145,7 +145,7 @@
 
 .software_pad{
   width: 50%;
-  background-color: none;
+  background-color: transparent;
   border: 2px solid var(--heading);
   margin-left: 40%;
   margin-top: 15%;
@@ -320,7 +320,7 @@
 
   .software_pad {
     width: 60%;
-    background-color: none;
+    background-color: transparent;
     border: 2px solid rgba(255,255,255,0.9);
     margin-left: 32%;
     margin-top: 10%;
