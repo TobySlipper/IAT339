@@ -1,0 +1,327 @@
+$bg: #001815;
+$blue: #499BDF;
+$heading: rgba(255,255,255,0.9);
+$hover: rgba(255,255,255,0.2);
+
+
+.top {
+  justify-content: space-between;
+}
+.top_nav_left {
+  padding: 1rem;
+  display: flex;
+  margin-left: 2%;
+}
+.top_nav_right {
+  padding: 1rem;
+  display: flex;
+  margin-right: 2%;
+  justify-content: flex-end;
+  padding-right: 0;
+  display: none;
+}
+.element {
+  border-top-style: none;
+}
+/*
+  Project Analysis SECTION -------------------
+*/
+#project_analysis {
+  background-color: $bg;
+  h2 {
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3.8rem;
+    font-size: 2.7rem;
+  }
+}
+.pj_h2 {
+  span {
+    -webkit-text-stroke: 2px $blue;
+    -webkit-text-fill-color: transparent;
+  }
+}
+.pj_analysis {
+  display: inline-block!important;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  margin-top: 1.5rem;
+}
+.pj_analysis_img {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 1rem;
+  flex-direction: column;
+}
+.pj_img_div {
+  width: 48%;
+  width: 100%;
+}
+.pj_img_div1 {
+  transition: transform 1s;
+  animation: slide1 2s ease-in-out 1 alternate;
+  &:hover {
+    transform: none;
+  }
+}
+@keyframes {
+  slide1 {
+    0% {
+    transform: translate(-70%, 0);
+    opacity: 0;
+  }
+  slide2 {
+    0% {
+    transform: translate(70%, 0);
+    opacity: 0;
+  }
+  moveup {
+    0% {
+    transform: translate(0, 50%);
+    opacity: 0;
+  }
+}
+100% {
+  transform: translate(0, 0);
+  opacity: 100%;
+  transform: translate(0, 0);
+  opacity: 100%;
+  transform: translate(0, 0);
+  opacity: 100%;
+}
+} {
+  .pj_img_div1 {
+    &:hover {
+      transform: scale(1.8) translate(30%, 0);
+      transition-delay: 0.7s;
+    }
+  }
+  .pj_img_div2 {
+    &:hover {
+      transform: scale(1.8) translate(-30%, 0);
+      transition-delay: 0.7s;
+    }
+  }
+  .pj_analysis_text {
+    h4 {
+      margin: 2rem 0;
+      color: $blue;
+    }
+  }
+  @media {
+    only {
+      screen {
+        and {
+          (max-width {
+            &:1080px) {
+              .my_info {
+    margin-left: 3%;
+              margin-right: 3%;
+            }
+            &:990px) {
+              #project_analysis h2{
+    font-size: 3.3rem;
+            }
+            &:935px) {
+              .my_info{
+    display: none;
+            }
+            &:800px) {
+              #project_analysis h2{
+    font-size: 3rem;
+            }
+            &:760px) {
+              .top_nav_left{
+    padding-left: 0;
+            }
+            &:660px) {
+              .pj_analysis {
+    margin-top: 1rem;
+            }
+            &:540px) {
+              .top_nav_left{
+    padding-left: 1rem;
+            }
+            &:500px) {
+              #project_analysis h2{
+    font-size: 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  /* The Overlay (background) */
+}
+.pj_img_div2 {
+  transition: transform 1s;
+  animation: slide2 2s ease-in-out 1 alternate;
+  margin-top: 5%;
+  &:hover {
+    transform: none;
+  }
+}
+.pj_analysis_text {
+  width: 100%;
+  margin-left: 0;
+  margin-top: 4rem;
+  animation: moveup 2s ease-in-out 1 alternate;
+  margin-top: 3rem;
+  margin-top: 2.5rem;
+  span {
+    -webkit-text-fill-color: $blue;
+  }
+  h4 {
+    font-size: 14px;
+    margin: 1rem 0;
+  }
+}
+.pj_analysis_text2 {
+  width: 35%;
+  margin-right: 5%;
+  h4 {
+    margin: 2rem 0;
+  }
+}
+/* Responsive Designs */
+@media {
+  only {
+    screen {
+      and {
+        (max-width {
+          &:1255px) {
+            #project_analysis h2{
+    font-size: 3.5rem;
+          }
+        }
+      }
+    }
+  }
+  screen {
+    and {
+      (max-height {
+        &: {
+          540px) {
+            .overlay a {font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+.my_info2 {
+  display: contents;
+  display: none;
+}
+.my_info_row1 {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 14%;
+  margin-right: 10%;
+  margin-bottom: 1rem;
+  & > .contact_place {
+    width: 50%;
+  }
+}
+.my_info_row2 {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 14%;
+  margin-right: 10%;
+  & > .contact_place {
+    width: 50%;
+  }
+}
+.contact_place {
+  justify-content: flex-start;
+  h4 {
+    font-size: 12px;
+    margin-left: 1.5rem;
+  }
+  img {
+    max-width: 30px;
+    max-height: 30px;
+    vertical-align: middle;
+  }
+}
+.footer {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+.phone_menu {
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 3%;
+  align-self: center;
+  padding: 1rem;
+}
+/* 原菜单变化 暂时屏蔽 */
+/*
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-5px, 4px);
+    transform: rotate(-45deg) translate(-5px, 4px);
+  }
+  .change .bar2 {
+    opacity: 0;
+  }
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-5px, -5px);
+    transform: rotate(45deg) translate(-5px, -5px);
+  }
+*/
+.fa_icons {
+  width: 60%;
+  margin-left: 20%;
+}
+.my_info3 {
+  display: contents;
+  & > .contact_place {
+    margin-left: 25%;
+    width: 50%;
+    margin-bottom: 0.5rem;
+  }
+}
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: $bg;
+  overflow-x: hidden;
+  transition: 0.5s;
+  a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+/* The navigation links inside the overlay */
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+/* Position the close button (top right corner) */

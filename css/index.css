@@ -47,7 +47,7 @@
 
 @keyframes glow {
   40% {
-    text-shadow: 0 0 0.5rem var(--blue);
+    text-shadow: 0 0 0.5rem #499BDF;
   }
 }
 
@@ -57,7 +57,7 @@
 
 .square_pad{
   width: 30%;
-  background-color: var(--hover);
+  background-color: rgba(255,255,255,0.2);
   margin-left: 55%;
   margin-top: 10%;
   animation: zoom 3s ease-in-out infinite alternate;
@@ -107,7 +107,7 @@
 
 .pic_note{
   width: 10%;
-  background-color: var(--hover);
+  background-color: rgba(255,255,255,0.2);
   text-align: right;
 }
 
@@ -146,7 +146,7 @@
 .software_pad{
   width: 50%;
   background-color: transparent;
-  border: 2px solid var(--heading);
+  border: 2px solid  rgba(255,255,255,0.9);
   margin-left: 40%;
   margin-top: 15%;
 }
@@ -154,7 +154,7 @@
 .software_pad h4{
   margin-top: 2rem;
   text-align: center;
-  color: var(--blue);
+  color: #499BDF;
 }
 
 .job_title img{
@@ -176,7 +176,7 @@
   margin-top: 0;
   margin-bottom: 2rem;
   text-align: center;
-  color: var(--blue);
+  color: #499BDF;
 }
 
 #who_am_I h2{
@@ -188,7 +188,7 @@
 }
 
 .empty_h2 h2{
-  -webkit-text-stroke: 2px var(--blue);
+  -webkit-text-stroke: 2px #499BDF;
   -webkit-text-fill-color: transparent;
 }
 
@@ -201,7 +201,7 @@
   Project Analysis SECTION -------------------
 */
 #project_analysis{
-  background-color: var(--bg);
+  background-color: #001815;
 }
 
 #project_analysis h2{
@@ -211,7 +211,7 @@
 }
 
 #project_analysis span{
-  -webkit-text-stroke: 2px var(--blue);
+  -webkit-text-stroke: 2px #499BDF;
   -webkit-text-fill-color: transparent;
 }
 

@@ -23,7 +23,7 @@
   Project Analysis SECTION -------------------
 */
 #project_analysis{
-  background-color: var(--bg);
+  background-color: #001815;
 }
 
 #project_analysis h2{
@@ -33,7 +33,7 @@
 }
 
 .pj_h2 span{
-  -webkit-text-stroke: 2px var(--blue);
+  -webkit-text-stroke: 2px #499BDF;
   -webkit-text-fill-color: transparent;
 }
 
@@ -119,7 +119,7 @@
 
 .pj_analysis_text h4{
   margin:2rem 0;
-  color: var(--blue);
+  color: #499BDF;
 }
 
 .pj_analysis_text2{
@@ -132,7 +132,7 @@
 }
 
 .pj_analysis_text span{
-  -webkit-text-fill-color: var(--blue);
+  -webkit-text-fill-color: #499BDF;
 }
 
 

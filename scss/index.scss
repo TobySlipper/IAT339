@@ -1,0 +1,480 @@
+$bg: #001815;
+$blue: #499BDF;
+$heading: rgba(255,255,255,0.9);
+$hover: rgba(255,255,255,0.2);
+
+#homepage {
+  background-image: url("../img/bg1.png");
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: cover;
+  margin-left: 0;
+  margin-right: 0;
+  h1 {
+    color: white;
+    text-align: center;
+    margin-top: -1rem;
+    animation: reveal 3s ease-in-out forwards 0.2s, glow 2.5s linear infinite 2s;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    &:hover {
+    }
+  }
+}
+.top {
+  justify-content: space-between;
+}
+.top_nav_left {
+  padding: 1rem;
+  display: flex;
+  margin-left: 2%;
+}
+.top_nav_right {
+  padding: 1rem;
+  display: flex;
+  margin-right: 2%;
+  justify-content: flex-end;
+  padding-right: 0;
+  display: none;
+}
+@keyframes {
+  reveal {
+    80%{
+    letter-spacing: 8px;
+  }
+  zoom {
+    0%, 100%{
+    transform: scale(1);
+  }
+}
+100% {
+  background-size: 300% 300%;
+}
+} {
+  @keyframes {
+    glow {
+      40% {
+    text-shadow: 0 0 0.5rem $blue;
+    }
+  }
+  .info_pads2 {
+    display: none;
+  }
+  .square_pad_text {
+    color: white;
+    padding: 3rem;
+  }
+  @media {
+    only {
+      screen {
+        and {
+          (max-width {
+            &:1080px) {
+              .my_info {
+    margin-left: 3%;
+              margin-right: 3%;
+            }
+            &:990px) {
+              #who_am_I h2 {
+    font-size: 3.3rem;
+              margin-right: 10%;
+            }
+            &:935px) {
+              .square_pad{
+    width: 35%;
+            }
+            &:800px) {
+              .square_pad_text{
+    padding: 2rem;
+            }
+            &:760px) {
+              .top_nav_left{
+    padding-left: 0;
+            }
+            &:660px) {
+              .square_pad{
+    width: 50%;
+              margin-left: 25%;
+            }
+            &:540px) {
+              .top_nav_left{
+    padding-left: 1rem;
+            }
+            &:500px) {
+              #who_am_I h2 {
+    font-size: 2rem;
+              margin-right: 8%;
+            }
+            &:470px) {
+              .info_pads{
+    display: none;
+            }
+            &:370px) {
+              .square_pad{
+    width: 80%;
+              margin-left: 10%;
+            }
+            &:325px) {
+              .square_pad{
+    width: 70%;
+              margin-left: 15%;
+            }
+          }
+        }
+      }
+    }
+  }
+  /* The Overlay (background) */
+}
+.square_pad {
+  width: 30%;
+  background-color: $hover;
+  margin-left: 55%;
+  margin-top: 10%;
+  animation: zoom 3s ease-in-out infinite alternate;
+  width: 60%;
+  margin-left: 20%;
+}
+50% {
+  transform: scale(1.03);
+}
+.hp_personal_info {
+  width: 50%;
+  text-align: center;
+  margin-left: 5%;
+  width: 60%;
+  text-align: center;
+  margin-left: 20%;
+}
+.element {
+  border-top-style: none;
+}
+/*
+  Who Am I SECTION -------------------
+*/
+.about_me {
+  display: flex;
+}
+.pic_info {
+  width: 40%;
+}
+.pic_me {
+  max-width: 50%;
+  margin-left: 5%;
+}
+.pic_note {
+  width: 10%;
+  background-color: $hover;
+  text-align: right;
+}
+.pic_note_text {
+  color: white;
+  padding: 1rem;
+}
+.softwares {
+  display: flex;
+  padding: 2rem;
+  & > .software_list {
+    width: 90%;
+    margin-left: 10%;
+  }
+}
+.my_skills {
+  width: 50%;
+  img {
+    max-width: 25px;
+  }
+  h4 {
+    margin-bottom: 2rem;
+  }
+}
+.software_list {
+  width: 45%;
+  margin-left: 5%;
+  width: 95%;
+  p {
+    text-align: left;
+  }
+}
+.software_pad {
+  width: 50%;
+  background-color: transparent;
+  border: 2px solid  $heading;
+  margin-left: 40%;
+  margin-top: 15%;
+  width: 60%;
+  background-color: transparent;
+  border: 2px solid $heading;
+  margin-left: 32%;
+  margin-top: 10%;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10%;
+  h4 {
+    margin-top: 2rem;
+    text-align: center;
+    color: $blue;
+  }
+}
+.job_title {
+  img {
+    max-width: 32px;
+  }
+}
+.experience_pad {
+  width: 35%;
+  margin-left: 10%;
+  margin-top: -1.5rem;
+  border: 2px solid pink;
+  width: 40%;
+  margin-left: 8%;
+  margin-top: -1.5rem;
+  border: 2px solid pink;
+  margin-top: -1.2rem;
+}
+.int_positions {
+  padding: 2rem;
+  h4 {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: $blue;
+  }
+  & > .software_list {
+    width: 72%;
+    margin-left: 14%;
+  }
+}
+#who_am_I {
+  h2 {
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3.8rem;
+    text-align: right;
+    margin-right: 18%;
+    font-size: 3rem;
+    margin-right: 8%;
+    font-size: 2.7rem;
+    margin-right: 8%;
+    font-size: 2rem;
+    text-align: center;
+    margin-right: 0;
+  }
+}
+.empty_h2 {
+  h2 {
+    -webkit-text-stroke: 2px $blue;
+    -webkit-text-fill-color: transparent;
+  }
+}
+.solid_h2 {
+  margin-bottom: 12%;
+  margin-top: -12rem;
+  margin-bottom: 4.5rem;
+}
+/*
+  Project Analysis SECTION -------------------
+*/
+#project_analysis {
+  background-color: $bg;
+  h2 {
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3.8rem;
+    font-size: 3.5rem;
+    font-size: 3.3rem;
+    font-size: 3rem;
+    font-size: 2.7rem;
+    font-size: 2rem;
+  }
+  span {
+    -webkit-text-stroke: 2px $blue;
+    -webkit-text-fill-color: transparent;
+  }
+}
+.hp_pj_img {
+  transition: transform .3s;
+  &:hover {
+    transform: scale(1.03);
+  }
+}
+.pj_analysis {
+  display: flex;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  flex-direction: column;
+}
+.pj_analysis_p {
+  width: 48%;
+  width: 100%;
+  margin-bottom: 1rem;
+  p {
+    margin-top: 0.8rem;
+  }
+}
+/* Responsive Designs */
+@media {
+  only {
+    screen {
+      and {
+        (max-width {
+          &:1255px) {
+            #who_am_I h2 {
+    font-size: 3.5rem;
+            margin-right: 15%;
+          }
+        }
+      }
+    }
+  }
+  screen {
+    and {
+      (max-height {
+        &: {
+          540px) {
+            .overlay a {font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+.my_info {
+  display: none;
+}
+.my_info2 {
+  display: contents;
+  display: none;
+}
+.my_info_row1 {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 14%;
+  margin-right: 10%;
+  margin-bottom: 1rem;
+  & > .contact_place {
+    width: 50%;
+  }
+}
+.my_info_row2 {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 14%;
+  margin-right: 10%;
+  & > .contact_place {
+    width: 50%;
+  }
+}
+.contact_place {
+  justify-content: flex-start;
+  h4 {
+    font-size: 12px;
+    margin-left: 1.5rem;
+  }
+  img {
+    max-width: 30px;
+    max-height: 30px;
+    vertical-align: middle;
+  }
+}
+.fa {
+  font-size: 1.5rem!important;
+  font-size: 1.2rem!important;
+}
+.footer {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+.phone_menu {
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 3%;
+  align-self: center;
+  padding: 1rem;
+}
+/* 原菜单变形部分 暂时屏蔽 */
+/*
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-5px, 4px);
+    transform: rotate(-45deg) translate(-5px, 4px);
+  }
+  .change .bar2 {
+    opacity: 0;
+  }
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-5px, -5px);
+    transform: rotate(45deg) translate(-5px, -5px);
+  }
+*/
+.fa_icons {
+  width: 60%;
+  margin-left: 20%;
+}
+.my_info3 {
+  display: contents;
+  & > .contact_place {
+    margin-left: 25%;
+    width: 50%;
+    margin-bottom: 0.5rem;
+  }
+}
+.info_pads2 {
+  display: contents;
+  & > .solid_h2 {
+    margin-top: 1rem;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  & > .experience_pad {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 1rem;
+  }
+}
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: $bg;
+  overflow-x: hidden;
+  transition: 0.5s;
+  a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+/* The navigation links inside the overlay */
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+/* Position the close button (top right corner) */
